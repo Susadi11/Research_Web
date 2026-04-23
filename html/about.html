@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="About Us — Meet the CogniCare research team" />
-  <title>About Us | CogniCare Research</title>
+  <meta name="description" content="About Us — Meet the Hale research team at SLIIT" />
+  <title>About Us | Hale</title>
 
   <link rel="stylesheet" href="../css/main.css" />
   <link rel="stylesheet" href="../css/components/navbar.css" />
@@ -22,7 +22,7 @@
       <div class="page-banner__label">The Team</div>
       <h1 class="page-banner__title">About Us</h1>
       <p class="page-banner__desc">
-        Meet the researchers and supervisors behind the CogniCare dementia monitoring project
+        Meet the supervisors and researchers behind the Hale dementia monitoring project
         at the Faculty of Computing, SLIIT.
       </p>
     </div>
@@ -40,35 +40,57 @@
 
         <div class="supervisors-grid">
 
-          <div class="supervisor-card reveal">
-            <!-- Place photo at: assets/images/team/samantha_thelijjagoda.jpg -->
-            <img src="../assets/images/team/samantha_thelijjagoda.jpg"
-                 alt="Prof. Samantha Thelijjagoda"
-                 class="supervisor-card__photo"
-                 onerror="this.outerHTML='<div class=\'supervisor-card__photo-placeholder\'>ST</div>'" />
-            <div class="supervisor-card__info">
-              <div class="supervisor-card__role">Main Supervisor</div>
-              <div class="supervisor-card__name">Prof. Samantha Thelijjagoda</div>
-              <div class="supervisor-card__dept">Faculty of Computing<br/>Sri Lanka Institute of Information Technology</div>
-              <a href="mailto:samantha.t@sliit.lk" class="supervisor-card__email">
-                ✉ samantha.t@sliit.lk
+          <div class="about-card reveal">
+            <div class="about-card__photo-wrap">
+              <img src="../assets/images/team/Samantha.jpg"
+                   alt="Prof. Samantha Thelijjagoda"
+                   class="about-card__photo"
+                   onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+              <div class="about-card__photo-placeholder" style="display:none">ST</div>
+            </div>
+            <div class="about-card__body">
+              <div class="about-card__name">Prof. Samantha Thelijjagoda</div>
+              <div class="about-card__role">Main Supervisor</div>
+              <div class="about-card__meta">
+                <i class="fa-solid fa-building-columns fa-fw"></i>
+                Faculty of Computing, SLIIT
+              </div>
+              <a href="mailto:samantha.t@sliit.lk" class="about-card__email">
+                <i class="fa-solid fa-envelope fa-fw"></i> samantha.t@sliit.lk
               </a>
+              <div class="about-card__divider"></div>
+              <ul class="about-card__points">
+                <li>Professor specialising in Human-Computer Interaction and AI systems</li>
+                <li>Supervises multiple undergraduate and postgraduate research projects at SLIIT</li>
+                <li>Published researcher in information systems, healthcare technology, and AI</li>
+              </ul>
             </div>
           </div>
 
-          <div class="supervisor-card reveal reveal-delay-1">
-            <!-- Place photo at: assets/images/team/thilini_jayalath.jpg -->
-            <img src="../assets/images/team/thilini_jayalath.jpg"
-                 alt="Ms. Thilini Jayalath"
-                 class="supervisor-card__photo"
-                 onerror="this.outerHTML='<div class=\'supervisor-card__photo-placeholder\'>TJ</div>'" />
-            <div class="supervisor-card__info">
-              <div class="supervisor-card__role">Co-Supervisor</div>
-              <div class="supervisor-card__name">Ms. Thilini Jayalath</div>
-              <div class="supervisor-card__dept">Faculty of Computing<br/>Sri Lanka Institute of Information Technology</div>
-              <a href="mailto:thilini.j@sliit.lk" class="supervisor-card__email">
-                ✉ thilini.j@sliit.lk
+          <div class="about-card reveal reveal-delay-1">
+            <div class="about-card__photo-wrap">
+              <img src="../assets/images/team/thilinij-1600674933.jpg"
+                   alt="Ms. Thilini Jayalath"
+                   class="about-card__photo"
+                   onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+              <div class="about-card__photo-placeholder" style="display:none">TJ</div>
+            </div>
+            <div class="about-card__body">
+              <div class="about-card__name">Ms. Thilini Jayalath</div>
+              <div class="about-card__role">Co-Supervisor</div>
+              <div class="about-card__meta">
+                <i class="fa-solid fa-building-columns fa-fw"></i>
+                Faculty of Computing, SLIIT
+              </div>
+              <a href="mailto:thilini.j@sliit.lk" class="about-card__email">
+                <i class="fa-solid fa-envelope fa-fw"></i> thilini.j@sliit.lk
               </a>
+              <div class="about-card__divider"></div>
+              <ul class="about-card__points">
+                <li>Lecturer with focus on machine learning and intelligent systems</li>
+                <li>Co-supervisor for the Hale dementia monitoring research project</li>
+                <li>Research interests in AI applications for healthcare and cognitive science</li>
+              </ul>
             </div>
           </div>
 
@@ -76,143 +98,128 @@
       </div>
     </section>
 
-    <!-- ── Team Members ── -->
-    <section class="team-section">
+    <!-- ── Researchers ── -->
+    <section class="researchers-section">
       <div class="container">
         <div class="section-header reveal">
-          <span class="section-label">Research Team</span>
+          <span class="section-label">Researchers</span>
           <h2 class="section-title">Group <span>Members</span></h2>
           <p class="section-desc">
-            Four final-year undergraduate students from the Faculty of Computing, SLIIT,
-            each leading a dedicated AI module.
+            Four final-year undergraduate researchers from the Faculty of Computing, SLIIT,
+            each leading a dedicated AI module of the Hale platform.
           </p>
         </div>
 
-        <div class="team-grid">
+        <div class="researcher-grid">
 
           <!-- Susadi Sandanima -->
-          <div class="team-card reveal">
-            <div class="team-card__photo-wrap">
-              <!-- Place photo at: assets/images/team/susadi_sandanima.jpg -->
-              <img src="../assets/images/team/susadi_sandanima.jpg"
+          <div class="about-card reveal">
+            <div class="about-card__photo-wrap">
+              <img src="../assets/images/team/susadi.jpeg"
                    alt="Susadi Sandanima"
-                   class="team-card__photo"
-                   onerror="this.outerHTML='<div class=\'team-card__photo-placeholder\'>SS</div>'" />
+                   class="about-card__photo"
+                   onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+              <div class="about-card__photo-placeholder" style="display:none">SS</div>
             </div>
-            <div class="team-card__body">
-              <div class="team-card__name">Susadi Sandanima</div>
-              <div class="team-card__role">Conversational AI Module</div>
-              <div class="team-card__id">IT22180384</div>
-              <a href="mailto:it22180384@my.sliit.lk" class="team-card__email">
-                ✉ it22180384@my.sliit.lk
+            <div class="about-card__body">
+              <div class="about-card__name">Susadi Sandanima</div>
+              <div class="about-card__role">Conversational AI Module</div>
+              <div class="about-card__meta">
+                <i class="fa-solid fa-id-card fa-fw"></i> IT22180384
+              </div>
+              <a href="mailto:it22180384@my.sliit.lk" class="about-card__email">
+                <i class="fa-solid fa-envelope fa-fw"></i> it22180384@my.sliit.lk
               </a>
+              <div class="about-card__divider"></div>
+              <ul class="about-card__points">
+                <li>Developed NLP-based speech analysis pipeline for dementia risk detection</li>
+                <li>Trained transformer models on the DementiaBank Pitt Corpus dataset</li>
+                <li>Achieved 87.3% accuracy in conversational pattern classification</li>
+              </ul>
             </div>
           </div>
 
           <!-- Vindi Perera -->
-          <div class="team-card reveal reveal-delay-1">
-            <div class="team-card__photo-wrap">
-              <!-- Place photo at: assets/images/team/vindi_perera.jpg -->
-              <img src="../assets/images/team/vindi_perera.jpg"
+          <div class="about-card reveal reveal-delay-1">
+            <div class="about-card__photo-wrap">
+              <img src="../assets/images/team/susadi.jpeg"
                    alt="Vindi Perera"
-                   class="team-card__photo"
-                   onerror="this.outerHTML='<div class=\'team-card__photo-placeholder\'>VP</div>'" />
+                   class="about-card__photo"
+                   onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+              <div class="about-card__photo-placeholder" style="display:none">VP</div>
             </div>
-            <div class="team-card__body">
-              <div class="team-card__name">Vindi Perera</div>
-              <div class="team-card__role">MMSE Screening Module</div>
-              <div class="team-card__id">IT22363916</div>
-              <a href="mailto:it22363916@my.sliit.lk" class="team-card__email">
-                ✉ it22363916@my.sliit.lk
+            <div class="about-card__body">
+              <div class="about-card__name">Vindi Perera</div>
+              <div class="about-card__role">MMSE Screening Module</div>
+              <div class="about-card__meta">
+                <i class="fa-solid fa-id-card fa-fw"></i> IT22363916
+              </div>
+              <a href="mailto:it22363916@my.sliit.lk" class="about-card__email">
+                <i class="fa-solid fa-envelope fa-fw"></i> it22363916@my.sliit.lk
               </a>
+              <div class="about-card__divider"></div>
+              <ul class="about-card__points">
+                <li>Built automated MMSE cognitive assessment system with voice and visual tasks</li>
+                <li>Integrated multimodal inputs for comprehensive cognitive screening</li>
+                <li>Contributed to the system's 89.06% overall multimodal accuracy</li>
+              </ul>
             </div>
           </div>
 
           <!-- Vinuk Lakvindu -->
-          <div class="team-card reveal reveal-delay-2">
-            <div class="team-card__photo-wrap">
-              <!-- Place photo at: assets/images/team/vinuk_lakvindu.jpg -->
-              <img src="../assets/images/team/vinuk_lakvindu.jpg"
+          <div class="about-card reveal reveal-delay-2">
+            <div class="about-card__photo-wrap">
+              <img src="../assets/images/team/susadi.jpeg"
                    alt="Vinuk Lakvindu"
-                   class="team-card__photo"
-                   onerror="this.outerHTML='<div class=\'team-card__photo-placeholder\'>VL</div>'" />
+                   class="about-card__photo"
+                   onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+              <div class="about-card__photo-placeholder" style="display:none">VL</div>
             </div>
-            <div class="team-card__body">
-              <div class="team-card__name">Vinuk Lakvindu</div>
-              <div class="team-card__role">Cognitive Game Module</div>
-              <div class="team-card__id">IT22055026</div>
-              <a href="mailto:it22055026@my.sliit.lk" class="team-card__email">
-                ✉ it22055026@my.sliit.lk
+            <div class="about-card__body">
+              <div class="about-card__name">Vinuk Lakvindu</div>
+              <div class="about-card__role">Cognitive Game Module</div>
+              <div class="about-card__meta">
+                <i class="fa-solid fa-id-card fa-fw"></i> IT22055026
+              </div>
+              <a href="mailto:it22055026@my.sliit.lk" class="about-card__email">
+                <i class="fa-solid fa-envelope fa-fw"></i> it22055026@my.sliit.lk
               </a>
+              <div class="about-card__divider"></div>
+              <ul class="about-card__points">
+                <li>Designed and implemented three cognitive mini-games for memory and attention</li>
+                <li>Developed real-time performance scoring and cognitive risk profiling engine</li>
+                <li>Integrated gamification strategies for elderly user engagement</li>
+              </ul>
             </div>
           </div>
 
           <!-- Tharushi Methmini -->
-          <div class="team-card reveal reveal-delay-3">
-            <div class="team-card__photo-wrap">
-              <!-- Place photo at: assets/images/team/tharushi_methmini.jpg -->
-              <img src="../assets/images/team/tharushi_methmini.jpg"
+          <div class="about-card reveal reveal-delay-3">
+            <div class="about-card__photo-wrap">
+              <img src="../assets/images/team/susadi.jpeg"
                    alt="Tharushi Methmini"
-                   class="team-card__photo"
-                   onerror="this.outerHTML='<div class=\'team-card__photo-placeholder\'>TM</div>'" />
+                   class="about-card__photo"
+                   onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+              <div class="about-card__photo-placeholder" style="display:none">TM</div>
             </div>
-            <div class="team-card__body">
-              <div class="team-card__name">Tharushi Methmini</div>
-              <div class="team-card__role">Smart Reminder Module</div>
-              <div class="team-card__id">IT22267504</div>
-              <a href="mailto:it22267504@my.sliit.lk" class="team-card__email">
-                ✉ it22267504@my.sliit.lk
-              </a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ── University info ── -->
-    <section class="uni-section">
-      <div class="container">
-        <div class="uni-inner">
-          <div class="reveal-left">
-            <div class="uni-logo-wrap">
-              <!-- Place logo at: assets/images/logo/sliit_logo.png -->
-              <img src="../assets/images/logo/sliit_logo.png"
-                   alt="SLIIT Logo"
-                   class="uni-logo"
-                   onerror="this.outerHTML='<div class=\'uni-logo-placeholder\'><i class=\'fa-solid fa-graduation-cap\'></i></div>'" />
-              <div>
-                <div class="uni-name">Sri Lanka Institute of Information Technology
-                  <span>Faculty of Computing · Malabe, Sri Lanka</span>
-                </div>
+            <div class="about-card__body">
+              <div class="about-card__name">Tharushi Methmini</div>
+              <div class="about-card__role">Smart Reminder Module</div>
+              <div class="about-card__meta">
+                <i class="fa-solid fa-id-card fa-fw"></i> IT22267504
               </div>
+              <a href="mailto:it22267504@my.sliit.lk" class="about-card__email">
+                <i class="fa-solid fa-envelope fa-fw"></i> it22267504@my.sliit.lk
+              </a>
+              <div class="about-card__divider"></div>
+              <ul class="about-card__points">
+                <li>Built AI-driven medication and appointment reminder system for elderly users</li>
+                <li>Implemented caregiver notification alerts and real-time dashboard features</li>
+                <li>Developed adaptive scheduling based on user behaviour patterns</li>
+              </ul>
             </div>
-            <p class="uni-desc">
-              SLIIT is one of Sri Lanka's leading institutes of higher education specialising in
-              Information Technology. The Faculty of Computing provides world-class undergraduate
-              and postgraduate programmes, producing skilled graduates who contribute to the global
-              technology landscape.
-            </p>
           </div>
 
-          <div class="uni-facts reveal-right">
-            <div class="uni-fact">
-              <div class="uni-fact__val">30+</div>
-              <div class="uni-fact__label">Years of Excellence</div>
-            </div>
-            <div class="uni-fact">
-              <div class="uni-fact__val">20K+</div>
-              <div class="uni-fact__label">Students Enrolled</div>
-            </div>
-            <div class="uni-fact">
-              <div class="uni-fact__val">5</div>
-              <div class="uni-fact__label">Faculties</div>
-            </div>
-            <div class="uni-fact">
-              <div class="uni-fact__val">100+</div>
-              <div class="uni-fact__label">Research Publications</div>
-            </div>
-          </div>
         </div>
       </div>
     </section>

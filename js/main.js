@@ -31,11 +31,9 @@
     navEl.innerHTML = `
       <div class="navbar__inner">
         <a href="${h}" class="navbar__logo">
-          <div class="navbar__logo-icon">
-            <i class="fa-solid fa-brain"></i>
-          </div>
+          <div class="navbar__logo-icon">H</div>
           <div class="navbar__logo-text">
-            <span class="navbar__logo-name">CogniCare</span>
+            <span class="navbar__logo-name">Hale</span>
             <span class="navbar__logo-sub">Dementia Research · SLIIT</span>
           </div>
         </a>
@@ -44,34 +42,8 @@
           <a href="${h}" class="navbar__link">Home</a>
           <a href="${b}domain.html" class="navbar__link">Domain</a>
           <a href="${b}milestones.html" class="navbar__link">Milestones</a>
-
-          <div class="navbar__dropdown">
-            <button class="navbar__dropdown-trigger" aria-haspopup="true" aria-expanded="false">
-              Resources
-              <i class="fa-solid fa-chevron-down" style="font-size:11px"></i>
-            </button>
-            <div class="navbar__dropdown-menu" role="menu">
-              <a href="${b}documents.html" class="navbar__dropdown-item" role="menuitem">
-                <div class="navbar__dropdown-item-icon">
-                  <i class="fa-regular fa-file-lines"></i>
-                </div>
-                <div>
-                  <div style="font-weight:600;font-size:var(--text-sm);color:var(--clr-text)">Documents</div>
-                  <div style="font-size:var(--text-xs);color:var(--clr-text-muted)">Reports &amp; checklists</div>
-                </div>
-              </a>
-              <a href="${b}presentations.html" class="navbar__dropdown-item" role="menuitem">
-                <div class="navbar__dropdown-item-icon">
-                  <i class="fa-solid fa-chart-bar"></i>
-                </div>
-                <div>
-                  <div style="font-weight:600;font-size:var(--text-sm);color:var(--clr-text)">Presentations</div>
-                  <div style="font-size:var(--text-xs);color:var(--clr-text-muted)">Slides from all reviews</div>
-                </div>
-              </a>
-            </div>
-          </div>
-
+          <a href="${b}documents.html" class="navbar__link">Documents</a>
+          <a href="${b}presentations.html" class="navbar__link">Presentations</a>
           <a href="${b}about.html" class="navbar__link">About Us</a>
           <a href="${b}contact.html" class="navbar__link">Contact</a>
         </nav>
@@ -117,16 +89,14 @@
         <div class="footer__main">
           <div class="footer__brand">
             <div class="footer__logo">
-              <div class="footer__logo-icon">
-                <i class="fa-solid fa-brain"></i>
-              </div>
+              <div class="footer__logo-icon">H</div>
               <div>
-                <div class="footer__logo-name">CogniCare</div>
+                <div class="footer__logo-name">Hale</div>
                 <div class="footer__logo-sub">Dementia Research Project</div>
               </div>
             </div>
             <p class="footer__tagline">
-              An AI-driven platform for early dementia risk monitoring and cognitive support for the elderly.
+              An AI-driven platform for early dementia risk monitoring and cognitive support for the elderly — by Hale.
             </p>
             <div class="footer__uni">
               <i class="fa-solid fa-graduation-cap"></i>
@@ -162,7 +132,7 @@
         </div>
 
         <div class="footer__bottom">
-          <p class="footer__copy">© 2024 CogniCare Research Team · SLIIT · All rights reserved.</p>
+          <p class="footer__copy">© 2024 Hale Research Team · SLIIT · All rights reserved.</p>
           <div class="footer__bottom-links">
             <a class="footer__bottom-link" href="${h}">Home</a>
             <a class="footer__bottom-link" href="${b}contact.html">Contact</a>

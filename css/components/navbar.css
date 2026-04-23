@@ -49,9 +49,10 @@
   align-items: center;
   justify-content: center;
   color: #fff;
-  font-size: var(--text-sm);
+  font-size: 18px;
   font-weight: var(--fw-bold);
   flex-shrink: 0;
+  letter-spacing: -0.5px;
 }
 
 .navbar__logo-text {
