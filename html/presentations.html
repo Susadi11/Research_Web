@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Presentations — Slides from all project presentations" />
+  <title>Presentations | CogniCare Research</title>
+
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/components/navbar.css" />
+  <link rel="stylesheet" href="../css/components/footer.css" />
+  <link rel="stylesheet" href="../css/pages/presentations.css" />
+</head>
+<body>
+
+  <header class="navbar" role="banner"></header>
+
+  <!-- Page Banner -->
+  <div class="page-banner">
+    <div class="container">
+      <div class="page-banner__label">Slides & Presentations</div>
+      <h1 class="page-banner__title">Presentations</h1>
+      <p class="page-banner__desc">
+        Slides from all past and upcoming presentations. Download or view directly in your browser.
+      </p>
+    </div>
+  </div>
+
+  <main class="presentations-page section">
+    <div class="container">
+
+      <div class="section-header reveal" style="margin-bottom:var(--space-10)">
+        <span class="section-label">All Presentations</span>
+        <h2 class="section-title">Project <span>Presentation Slides</span></h2>
+        <p class="section-desc">
+          Slides are available as PDFs. Provisions are kept for future presentations
+          as the project progresses.
+        </p>
+      </div>
+
+      <!-- Grid -->
+      <div class="pres-grid">
+
+        <!-- 1 — Proposal -->
+        <div class="pres-card reveal">
+          <div class="pres-card__thumb">
+            <!-- Replace with: assets/presentations/proposal_cover.png (thumbnail screenshot) -->
+            <img src="../assets/images/project/proposal_thumb.png"
+                 alt="Proposal presentation thumbnail"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="pres-card__thumb-placeholder" style="display:none">
+              <div class="pres-card__thumb-icon"><i class="fa-solid fa-chart-bar" style="color:rgba(255,255,255,0.6);font-size:48px"></i></div>
+              <div class="pres-card__thumb-text">Proposal Presentation</div>
+            </div>
+            <div class="pres-card__num">1</div>
+            <span class="pres-card__badge pres-card__badge--available">Available</span>
+          </div>
+          <div class="pres-card__body">
+            <div class="pres-card__type">Proposal Review</div>
+            <h3 class="pres-card__title">Project Proposal Presentation</h3>
+            <p class="pres-card__desc">
+              Introduces the research problem, proposed system architecture, four AI modules,
+              expected outcomes, and team roles. Includes initial literature survey and motivation.
+            </p>
+            <div class="pres-card__footer">
+              <span class="pres-card__date"><i class="fa-regular fa-calendar"></i>July 2024</span>
+              <div class="pres-card__actions">
+                <!-- Place file at: assets/presentations/proposal_presentation.pdf -->
+                <a href="../assets/presentations/proposal_presentation.pdf"
+                   class="btn btn--primary btn--sm" target="_blank">View PDF</a>
+                <a href="../assets/presentations/proposal_presentation.pdf"
+                   class="btn btn--ghost btn--sm" download>Download</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2 — Progress 1 -->
+        <div class="pres-card reveal reveal-delay-1">
+          <div class="pres-card__thumb">
+            <img src="../assets/images/project/pp1_thumb.png"
+                 alt="Progress Presentation 1 thumbnail"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="pres-card__thumb-placeholder" style="display:none">
+              <div class="pres-card__thumb-icon"><i class="fa-solid fa-chart-bar" style="color:rgba(255,255,255,0.6);font-size:48px"></i></div>
+              <div class="pres-card__thumb-text">Progress Presentation 1</div>
+            </div>
+            <div class="pres-card__num">2</div>
+            <span class="pres-card__badge pres-card__badge--available">Available</span>
+          </div>
+          <div class="pres-card__body">
+            <div class="pres-card__type">Progress Review 1</div>
+            <h3 class="pres-card__title">Progress Presentation 1</h3>
+            <p class="pres-card__desc">
+              Covers system architecture finalisation, dataset preprocessing pipeline,
+              initial ML model training results for conversational AI and cognitive game modules,
+              and preliminary accuracy on the DementiaBank Pitt Corpus.
+            </p>
+            <div class="pres-card__footer">
+              <span class="pres-card__date"><i class="fa-regular fa-calendar"></i>December 2024</span>
+              <div class="pres-card__actions">
+                <!-- Place file at: assets/presentations/progress_presentation_1.pdf -->
+                <a href="../assets/presentations/progress_presentation_1.pdf"
+                   class="btn btn--primary btn--sm" target="_blank">View PDF</a>
+                <a href="../assets/presentations/progress_presentation_1.pdf"
+                   class="btn btn--ghost btn--sm" download>Download</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 — Progress 2 -->
+        <div class="pres-card reveal reveal-delay-2">
+          <div class="pres-card__thumb">
+            <img src="../assets/images/project/pp2_thumb.png"
+                 alt="Progress Presentation 2 thumbnail"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="pres-card__thumb-placeholder" style="display:none">
+              <div class="pres-card__thumb-icon"><i class="fa-solid fa-chart-bar" style="color:rgba(255,255,255,0.6);font-size:48px"></i></div>
+              <div class="pres-card__thumb-text">Progress Presentation 2</div>
+            </div>
+            <div class="pres-card__num">3</div>
+            <span class="pres-card__badge pres-card__badge--pending">Upcoming</span>
+          </div>
+          <div class="pres-card__body">
+            <div class="pres-card__type">Progress Review 2</div>
+            <h3 class="pres-card__title">Progress Presentation 2</h3>
+            <p class="pres-card__desc">
+              Full system integration results — 89.06% multimodal accuracy, ROC-AUC 0.94,
+              ablation studies, three-tier deployment, and caregiver dashboard demo.
+              Slides will be uploaded after the review.
+            </p>
+            <div class="pres-card__footer">
+              <span class="pres-card__date"><i class="fa-regular fa-calendar"></i>March 2025</span>
+              <div class="pres-card__actions">
+                <!-- Place file at: assets/presentations/progress_presentation_2.pdf -->
+                <span class="btn btn--ghost btn--sm" style="cursor:not-allowed;opacity:.55">Upcoming</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 — Final -->
+        <div class="pres-card pres-card--pending reveal reveal-delay-3">
+          <div class="pres-card__thumb">
+            <div class="pres-card__thumb-placeholder" style="display:flex">
+              <div class="pres-card__thumb-icon"><i class="fa-solid fa-graduation-cap" style="color:rgba(255,255,255,0.6);font-size:48px"></i></div>
+              <div class="pres-card__thumb-text">Final Presentation</div>
+            </div>
+            <div class="pres-card__num">4</div>
+            <span class="pres-card__badge pres-card__badge--pending">Upcoming</span>
+          </div>
+          <div class="pres-card__body">
+            <div class="pres-card__type">Final Review</div>
+            <h3 class="pres-card__title">Final Presentation</h3>
+            <p class="pres-card__desc">
+              Comprehensive final presentation covering the complete CogniCare platform,
+              full evaluation results, limitations analysis, future work directions,
+              and live system demonstration to the examination panel.
+            </p>
+            <div class="pres-card__footer">
+              <span class="pres-card__date"><i class="fa-regular fa-calendar"></i>May–June 2025</span>
+              <div class="pres-card__actions">
+                <!-- Place file at: assets/presentations/final_presentation.pdf -->
+                <span class="btn btn--ghost btn--sm" style="cursor:not-allowed;opacity:.55">Upcoming</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Upload instructions note -->
+      <div class="upload-note reveal">
+        <div class="upload-note__icon"><i class="fa-solid fa-folder-open" style="font-size:40px;color:var(--clr-primary);opacity:.5"></i></div>
+        <div class="upload-note__title">Adding Presentation Files</div>
+        <p class="upload-note__desc">
+          To make a presentation available, place the PDF in the
+          <code>assets/presentations/</code> folder using the exact filename shown in the
+          page source comments, then change the badge to "Available" and enable the view/download
+          buttons by removing the <code>Upcoming</code> placeholder.
+        </p>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer"></footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/components/navbar.js"></script>
+  <script src="../js/components/animations.js"></script>
+</body>
+</html>

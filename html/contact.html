@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Us — Get in touch with the CogniCare research team" />
+  <title>Contact | CogniCare Research</title>
+
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/components/navbar.css" />
+  <link rel="stylesheet" href="../css/components/footer.css" />
+  <link rel="stylesheet" href="../css/pages/contact.css" />
+</head>
+<body>
+
+  <header class="navbar" role="banner"></header>
+
+  <!-- Page Banner -->
+  <div class="page-banner">
+    <div class="container">
+      <div class="page-banner__label">Get in Touch</div>
+      <h1 class="page-banner__title">Contact Us</h1>
+      <p class="page-banner__desc">
+        Have questions about our research? Want to collaborate or learn more about CogniCare?
+        We'd love to hear from you.
+      </p>
+    </div>
+  </div>
+
+  <main class="contact-page">
+    <div class="contact-main">
+      <div class="container">
+        <div class="contact-layout">
+
+          <!-- ── Left: Info ── -->
+          <div class="contact-info reveal-left">
+            <h2 class="contact-info__title">Let's Connect</h2>
+            <p class="contact-info__desc">
+              Whether you're a researcher, clinician, student, or caregiver interested in our
+              dementia monitoring platform — we're happy to discuss our work and explore potential
+              collaboration opportunities.
+            </p>
+
+            <div class="contact-cards">
+              <div class="contact-card">
+                <div class="contact-card__icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                <div>
+                  <div class="contact-card__label">Institution</div>
+                  <div class="contact-card__value">Faculty of Computing, SLIIT · Malabe, Sri Lanka</div>
+                </div>
+              </div>
+              <div class="contact-card">
+                <div class="contact-card__icon"><i class="fa-solid fa-envelope"></i></div>
+                <div>
+                  <div class="contact-card__label">Group Email</div>
+                  <a href="mailto:it22180384@my.sliit.lk" class="contact-card__link">it22180384@my.sliit.lk</a>
+                </div>
+              </div>
+              <div class="contact-card">
+                <div class="contact-card__icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+                <div>
+                  <div class="contact-card__label">Main Supervisor</div>
+                  <a href="mailto:samantha.t@sliit.lk" class="contact-card__link">samantha.t@sliit.lk</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="team-contacts">
+              <div class="team-contacts__title">Individual Member Contacts</div>
+              <div class="team-contact-list">
+                <div class="team-contact-item">
+                  <span class="team-contact-item__name">Susadi Sandanima</span>
+                  <a href="mailto:it22180384@my.sliit.lk" class="team-contact-item__email">it22180384@my.sliit.lk</a>
+                </div>
+                <div class="team-contact-item">
+                  <span class="team-contact-item__name">Vindi Perera</span>
+                  <a href="mailto:it22363916@my.sliit.lk" class="team-contact-item__email">it22363916@my.sliit.lk</a>
+                </div>
+                <div class="team-contact-item">
+                  <span class="team-contact-item__name">Vinuk Lakvindu</span>
+                  <a href="mailto:it22055026@my.sliit.lk" class="team-contact-item__email">it22055026@my.sliit.lk</a>
+                </div>
+                <div class="team-contact-item">
+                  <span class="team-contact-item__name">Tharushi Methmini</span>
+                  <a href="mailto:it22267504@my.sliit.lk" class="team-contact-item__email">it22267504@my.sliit.lk</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── Right: Form ── -->
+          <div class="contact-form-wrap reveal-right">
+            <h3 class="contact-form-wrap__title">Send a Message</h3>
+
+            <div id="form-success" class="form-msg form-msg--success">
+              <i class="fa-solid fa-circle-check"></i> Message sent! We'll get back to you within a few days.
+            </div>
+            <div id="form-error" class="form-msg form-msg--error">
+              <i class="fa-solid fa-circle-xmark"></i> Please fill in all required fields correctly.
+            </div>
+
+            <form id="contact-form" class="form" novalidate>
+              <div class="form-row">
+                <div class="form-field">
+                  <label class="form-label" for="name">Full Name <span>*</span></label>
+                  <input class="form-input" type="text" id="name" name="name"
+                         placeholder="Your full name" required autocomplete="name" />
+                </div>
+                <div class="form-field">
+                  <label class="form-label" for="email">Email Address <span>*</span></label>
+                  <input class="form-input" type="email" id="email" name="email"
+                         placeholder="your@email.com" required autocomplete="email" />
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label class="form-label" for="affiliation">Affiliation / Organisation</label>
+                <input class="form-input" type="text" id="affiliation" name="affiliation"
+                       placeholder="University / Hospital / Company" />
+              </div>
+
+              <div class="form-field">
+                <label class="form-label" for="subject">Subject <span>*</span></label>
+                <select class="form-select" id="subject" name="subject" required>
+                  <option value="" disabled selected>Select a topic…</option>
+                  <option value="research">Research Enquiry</option>
+                  <option value="collaboration">Collaboration Proposal</option>
+                  <option value="clinical">Clinical / Healthcare Application</option>
+                  <option value="dataset">Dataset / Data Access</option>
+                  <option value="general">General Question</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-field">
+                <label class="form-label" for="message">Message <span>*</span></label>
+                <textarea class="form-textarea" id="message" name="message"
+                          placeholder="Tell us about your enquiry or collaboration idea…"
+                          rows="5" required></textarea>
+              </div>
+
+              <div class="form-submit">
+                <button type="submit" class="btn btn--primary btn--lg">
+                  Send Message →
+                </button>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer"></footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/components/navbar.js"></script>
+  <script src="../js/components/animations.js"></script>
+  <script src="../js/pages/contact.js"></script>
+</body>
+</html>
