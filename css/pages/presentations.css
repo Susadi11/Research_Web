@@ -43,6 +43,34 @@
   object-fit: cover;
 }
 
+/* Canva iframe preview */
+.pres-card__iframe-wrap {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--clr-primary-dark) 0%, var(--clr-primary) 60%, var(--clr-accent) 100%);
+}
+
+.pres-card__thumb-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1600px;
+  height: 900px;
+  transform: scale(0.38);
+  transform-origin: top left;
+  border: none;
+  pointer-events: none;
+}
+
+/* Transparent overlay — makes the whole thumb area clickable */
+.pres-card__thumb-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  cursor: pointer;
+}
+
 .pres-card__thumb-placeholder {
   display: flex;
   flex-direction: column;
