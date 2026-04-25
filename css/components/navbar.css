@@ -72,18 +72,19 @@
 
 .navbar__logo-name {
   font-family: var(--font-serif);
-  font-size: var(--text-lg);
+  font-size: var(--text-xl);
   font-weight: var(--fw-bold);
   color: var(--clr-oxford);
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
 }
 
 .navbar__logo-sub {
   font-family: var(--font-sans);
   font-size: 10px;
   color: var(--clr-text-muted);
-  font-weight: var(--fw-regular);
-  letter-spacing: 0.04em;
+  font-weight: var(--fw-medium);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 /* ── Nav links ── */

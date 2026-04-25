@@ -3,28 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Intelligent Dementia Risk Monitoring and Cognitive Support System for the Elderly Well-being — SLIIT Research Project" />
+  <meta name="description" content="Intelligent Dementia Risk Monitoring and Cognitive Support System — SLIIT Research Project" />
   <title>Hale — Dementia Risk Monitoring Research</title>
-
-  <!-- Design system -->
   <link rel="stylesheet" href="css/main.css" />
-  <!-- Components -->
   <link rel="stylesheet" href="css/components/navbar.css" />
   <link rel="stylesheet" href="css/components/footer.css" />
   <link rel="stylesheet" href="css/components/cards.css" />
   <link rel="stylesheet" href="css/components/hero.css" />
-  <!-- Page styles -->
   <link rel="stylesheet" href="css/pages/home.css" />
   <link rel="stylesheet" href="css/responsive.css" />
 </head>
 <body>
 
-  <!-- ══ NAVBAR ══ -->
   <header class="navbar" role="banner"></header>
 
   <!-- ══ HERO ══ -->
   <section class="hero">
     <div class="hero__bg">
+      <img class="hero__bg-photo" src="assets/images/home/home1.jpeg" alt="" />
       <div class="hero__blob hero__blob--1"></div>
       <div class="hero__blob hero__blob--2"></div>
       <div class="hero__blob hero__blob--3"></div>
@@ -32,129 +28,68 @@
     </div>
 
     <div class="hero__inner">
-      <!-- Left: Content -->
       <div class="hero__content">
         <div class="hero__tag">
           <span class="hero__tag-dot"></span>
           <i class="fa-solid fa-microscope" style="font-size:10px"></i>
           SLIIT Research Project 2024 · Faculty of Computing
         </div>
-
         <h1 class="hero__title">
           Intelligent<br />
           <span class="hero__title-highlight">Dementia Risk</span><br />
           Monitoring System
         </h1>
-
         <p class="hero__subtitle">
           An AI-driven platform for early dementia detection, cognitive support,
           and continuous monitoring of elderly well-being using multimodal machine learning.
         </p>
-
         <div class="hero__meta">
-          <span class="hero__meta-item"><i class="fa-solid fa-brain"></i> 4 AI Modules</span>
+          <span class="hero__meta-item">4 AI Modules</span>
           <span class="hero__meta-dot">·</span>
-          <span class="hero__meta-item"><i class="fa-solid fa-mobile-screen"></i> Kotlin Multiplatform</span>
+          <span class="hero__meta-item">Kotlin Multiplatform</span>
           <span class="hero__meta-dot">·</span>
-          <span class="hero__meta-item"><i class="fa-solid fa-robot"></i> LLaMA 3.2 3B</span>
+          <span class="hero__meta-item">LLaMA 3.2 3B</span>
         </div>
-
         <div class="hero__actions">
           <a href="html/domain.html" class="btn btn--primary btn--lg">Explore Research</a>
           <a href="html/documents.html" class="btn btn--outline btn--lg">View Documents</a>
         </div>
       </div>
 
-      <!-- Right: Metrics visual -->
       <div class="hero__visual">
         <div class="hero__float-badge hero__float-badge--1">
-          <i class="fa-solid fa-trophy"></i> 89.06% Accuracy
+          <i class="fa-solid fa-brain"></i> AI-Powered Detection
         </div>
-
         <div class="hero__card-stack">
           <div class="hero__metric">
-            <div class="hero__metric-icon hero__metric-icon--blue">
-              <i class="fa-solid fa-brain" style="color:var(--clr-primary)"></i>
-            </div>
             <div class="hero__metric-body">
-              <div class="hero__metric-value"
-                   data-counter data-target="89.06" data-suffix="%" data-decimals="2">89.06%</div>
+              <div class="hero__metric-value">89.06%</div>
               <div class="hero__metric-label">Multimodal Dementia Detection</div>
             </div>
           </div>
-
           <div class="hero__metric">
-            <div class="hero__metric-icon hero__metric-icon--green">
-              <i class="fa-solid fa-clipboard-check" style="color:#10b981"></i>
-            </div>
             <div class="hero__metric-body">
-              <div class="hero__metric-value"
-                   data-counter data-target="90.70" data-suffix="%" data-decimals="2">90.70%</div>
+              <div class="hero__metric-value">90.70%</div>
               <div class="hero__metric-label">Automated MMSE Accuracy</div>
             </div>
           </div>
-
           <div class="hero__metric">
-            <div class="hero__metric-icon hero__metric-icon--purple">
-              <i class="fa-solid fa-bell" style="color:#7c3aed"></i>
-            </div>
             <div class="hero__metric-body">
-              <div class="hero__metric-value"
-                   data-counter data-target="96.51" data-suffix="%" data-decimals="2">96.51%</div>
+              <div class="hero__metric-value">96.51%</div>
               <div class="hero__metric-label">Confusion Detection Rate</div>
             </div>
           </div>
-
           <div class="hero__metric">
-            <div class="hero__metric-icon hero__metric-icon--orange">
-              <i class="fa-solid fa-user-doctor" style="color:#f97316"></i>
-            </div>
             <div class="hero__metric-body">
-              <div class="hero__metric-value"
-                   data-counter data-target="96.05" data-suffix="%" data-decimals="2">96.05%</div>
+              <div class="hero__metric-value">96.05%</div>
               <div class="hero__metric-label">Caregiver Alert Accuracy</div>
             </div>
           </div>
         </div>
 
-        <div class="hero__float-badge hero__float-badge--2">
-          <i class="fa-solid fa-chart-line"></i> ROC-AUC 0.94
-        </div>
       </div>
     </div>
   </section>
-
-  <!-- ══ STATS BAR ══ -->
-  <div class="stats-bar">
-    <div class="container">
-      <div class="stats-bar__inner">
-        <div class="stats-bar__item">
-          <div class="stats-bar__value">
-            <span data-counter data-target="55" data-suffix="">55</span><span class="unit">M+</span>
-          </div>
-          <div class="stats-bar__label">People Affected by Dementia</div>
-        </div>
-        <div class="stats-bar__item">
-          <div class="stats-bar__value">
-            <span data-counter data-target="4">4</span><span class="unit"></span>
-          </div>
-          <div class="stats-bar__label">AI Modules Integrated</div>
-        </div>
-        <div class="stats-bar__item">
-          <div class="stats-bar__value">
-            <span data-counter data-target="12">12</span><span class="unit"></span>
-          </div>
-          <div class="stats-bar__label">Cognitive Parameters</div>
-        </div>
-        <div class="stats-bar__item">
-          <div class="stats-bar__value">
-            <span data-counter data-target="3">3</span><span class="unit">-tier</span>
-          </div>
-          <div class="stats-bar__label">Distributed Architecture</div>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <!-- ══ MODULES ══ -->
   <section class="section modules-section">
@@ -167,17 +102,11 @@
           working together as a unified multimodal platform.
         </p>
       </div>
-
       <div class="modules-grid" data-stagger>
-
         <div class="feature-card reveal">
           <div class="feature-card__icon"><i class="fa-solid fa-comments"></i></div>
           <h3 class="feature-card__title">Emotion-Aware Conversational AI</h3>
-          <p class="feature-card__desc">
-            Fine-tuned LLaMA 3.2 3B with LoRA provides empathetic support while analyzing
-            12 cognitive parameters across text, audio, and temporal modalities. Crisis
-            detection layer triggers immediate alerts for high-risk phrases.
-          </p>
+          <p class="feature-card__desc">Fine-tuned LLaMA 3.2 3B with LoRA provides empathetic support while analyzing 12 cognitive parameters across text, audio, and temporal modalities. Crisis detection layer triggers immediate alerts.</p>
           <div class="feature-card__tags">
             <span class="feature-card__tag">LLaMA 3.2 3B</span>
             <span class="feature-card__tag">XGBoost</span>
@@ -185,30 +114,20 @@
             <span class="feature-card__tag">Whisper ASR</span>
           </div>
         </div>
-
         <div class="feature-card reveal reveal-delay-1">
           <div class="feature-card__icon"><i class="fa-solid fa-gamepad"></i></div>
           <h3 class="feature-card__title">Gamified Cognitive Stimulation</h3>
-          <p class="feature-card__desc">
-            Memory-based card matching tasks measure reaction time, accuracy, and cognitive
-            features (SAC, IES). Motor baseline calibration isolates cognitive processing
-            time. LSTM temporal model detects gradual cognitive decline.
-          </p>
+          <p class="feature-card__desc">Memory-based card matching tasks measure reaction time, accuracy, and cognitive features (SAC, IES). Motor baseline calibration isolates cognitive processing time. LSTM temporal model detects gradual cognitive decline.</p>
           <div class="feature-card__tags">
             <span class="feature-card__tag">LSTM</span>
             <span class="feature-card__tag">SAC / IES</span>
             <span class="feature-card__tag">Logistic Regression</span>
           </div>
         </div>
-
         <div class="feature-card reveal reveal-delay-2">
           <div class="feature-card__icon"><i class="fa-solid fa-microphone"></i></div>
           <h3 class="feature-card__title">Voice-Based MMSE Screening</h3>
-          <p class="feature-card__desc">
-            Automated Mini-Mental State Examination using multimodal fusion of audio
-            features (MFCCs, Chroma, Tonnetz) and TF-IDF text features. Achieves
-            90.70% accuracy without requiring clinician contact.
-          </p>
+          <p class="feature-card__desc">Automated Mini-Mental State Examination using multimodal fusion of audio features (MFCCs, Chroma, Tonnetz) and TF-IDF text features. Achieves 90.70% accuracy without requiring clinician contact.</p>
           <div class="feature-card__tags">
             <span class="feature-card__tag">Random Forest</span>
             <span class="feature-card__tag">XGBoost</span>
@@ -216,76 +135,150 @@
             <span class="feature-card__tag">PCA</span>
           </div>
         </div>
-
         <div class="feature-card reveal reveal-delay-3">
           <div class="feature-card__icon"><i class="fa-solid fa-bell"></i></div>
           <h3 class="feature-card__title">Context-Aware Smart Reminders</h3>
-          <p class="feature-card__desc">
-            Adaptive reminder system with BERT-based NER for parsing, behavioral learning
-            over 30-day rolling logs, real-time WebSocket alarm escalation, and automatic
-            caregiver notification on confusion detection.
-          </p>
+          <p class="feature-card__desc">Adaptive reminder system with BERT-based NER for parsing, behavioral learning over 30-day rolling logs, real-time WebSocket alarm escalation, and automatic caregiver notification on confusion detection.</p>
           <div class="feature-card__tags">
             <span class="feature-card__tag">BERT NER</span>
             <span class="feature-card__tag">Gradient Boosting</span>
             <span class="feature-card__tag">WebSocket</span>
           </div>
         </div>
-
       </div>
     </div>
   </section>
 
+  <!-- ══ PARALLAX IMAGE BANNER ══ -->
+  <div class="home-parallax">
+    <div class="home-parallax__bg" style="background-image:url('assets/images/home/home2.jpeg')"></div>
+    <div class="home-parallax__overlay"></div>
+    <div class="home-parallax__content">
+      <div class="container">
+        <p class="home-parallax__quote">
+          "Empowering caregivers and preserving dignity through intelligent, continuous dementia monitoring."
+        </p>
+        <div class="home-parallax__stats">
+          <div class="hps-item"><span class="hps-value">89.06%</span><span class="hps-label">Detection Accuracy</span></div>
+          <div class="hps-sep"></div>
+          <div class="hps-item"><span class="hps-value">4</span><span class="hps-label">AI Modules</span></div>
+          <div class="hps-sep"></div>
+          <div class="hps-item"><span class="hps-value">12</span><span class="hps-label">Cognitive Parameters</span></div>
+          <div class="hps-sep"></div>
+          <div class="hps-item"><span class="hps-value">3-tier</span><span class="hps-label">Architecture</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- ══ ARCHITECTURE ══ -->
   <section class="section arch-section">
     <div class="container">
-      <div class="arch-inner">
-        <!-- Visual -->
-        <div class="reveal-left">
-          <div class="arch-visual">
-            <!-- Replace src with: assets/images/project/system_architecture.png -->
-            <img src="assets/images/project/system_architecture.png"
-                 alt="Three-tier system architecture diagram"
-                 onerror="this.parentElement.innerHTML='<div class=\'arch-visual-placeholder\'><div class=\'arch-visual-placeholder__icon\'>🏗️</div><div class=\'arch-visual-placeholder__text\'>Add architecture diagram<br><code>assets/images/project/system_architecture.png</code></div></div>'" />
-          </div>
-        </div>
-
-        <!-- Text -->
-        <div class="reveal-right">
-          <span class="section-label">System Architecture</span>
-          <h2 class="section-title" style="text-align:left;margin-bottom:var(--space-4)">
-            Three-Tier <span>Distributed</span> Architecture
-          </h2>
-          <p class="section-desc" style="text-align:left;margin-inline:0;margin-bottom:var(--space-8)">
-            A modular, scalable design separating user interaction, intelligence,
-            and clinical oversight across three distinct layers.
-          </p>
-
-          <div class="arch-list">
-            <div class="arch-list-item">
-              <div class="arch-list-item__num">1</div>
-              <div>
-                <div class="arch-list-item__title">Mobile Client (Kotlin Multiplatform)</div>
-                <div class="arch-list-item__desc">Jetpack Compose + MVVM for Android, iOS &amp; Web. Hosts conversational AI, games, MMSE &amp; reminders.</div>
-              </div>
-            </div>
-            <div class="arch-list-item">
-              <div class="arch-list-item__num">2</div>
-              <div>
-                <div class="arch-list-item__title">Cloud Backend Intelligence Layer</div>
-                <div class="arch-list-item__desc">Manages auth, ML inference, dementia risk estimation &amp; adaptive scheduling. MongoDB Atlas for multimodal data.</div>
-              </div>
-            </div>
-            <div class="arch-list-item">
-              <div class="arch-list-item__num">3</div>
-              <div>
-                <div class="arch-list-item__title">Caregiver Web Dashboard</div>
-                <div class="arch-list-item__desc">Single-page application visualising longitudinal risk scores, cognitive trends, MMSE results &amp; alerts.</div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="section-header reveal">
+        <span class="section-label">System Design</span>
+        <h2 class="section-title">Three-Tier <span>Distributed</span> Architecture</h2>
+        <p class="section-desc">A modular, scalable design separating user interaction, intelligence, and clinical oversight across three distinct layers.</p>
       </div>
+
+      <!-- CSS Architecture Diagram -->
+      <div class="arch-diagram reveal">
+
+        <!-- Tier 1 -->
+        <div class="arch-tier arch-tier--1">
+          <div class="arch-tier__header">
+            <span class="arch-tier__badge">T1</span>
+            TIER 1 — MOBILE CLIENT
+          </div>
+          <div class="arch-tier__nodes">
+            <div class="arch-node"><span>Conversational AI</span></div>
+            <div class="arch-node"><span>Cognitive Games</span></div>
+            <div class="arch-node"><span>MMSE Module</span></div>
+            <div class="arch-node"><span>Reminder Handler</span></div>
+            <div class="arch-node"><span>Auth / Login UI</span></div>
+          </div>
+        </div>
+
+        <!-- Arrow 1→2 -->
+        <div class="arch-conn">
+          <div class="arch-conn__labels">
+            <span class="arch-conn__tag">HTTP / REST (JSON)</span>
+            <span class="arch-conn__tag">WebSocket</span>
+          </div>
+          <div class="arch-conn__arrow">▼</div>
+        </div>
+
+        <!-- Tier 2 -->
+        <div class="arch-tier arch-tier--2">
+          <div class="arch-tier__header">
+            <span class="arch-tier__badge">T2</span>
+            TIER 2 — BACKEND INTELLIGENCE LAYER
+          </div>
+          <div class="arch-tier__modules">
+            <div class="arch-module">
+              <div class="arch-module__name">LLaMA 3.2 Chatbot</div>
+              <div class="arch-module__subs">
+                <span>12-Parameter Framework</span>
+                <span>LoRA Fine-tuned</span>
+                <span>Crisis Alert Layer</span>
+              </div>
+            </div>
+            <div class="arch-module">
+              <div class="arch-module__name">Game Engine</div>
+              <div class="arch-module__subs">
+                <span>Cognitive Game Logic</span>
+                <span>Score Computation</span>
+                <span>Session Tracking</span>
+              </div>
+            </div>
+            <div class="arch-module">
+              <div class="arch-module__name">MMSE Scoring Engine</div>
+              <div class="arch-module__subs">
+                <span>Adaptive Assessment</span>
+                <span>Performance Tracking</span>
+              </div>
+            </div>
+            <div class="arch-module">
+              <div class="arch-module__name">Reminder Optimizer</div>
+              <div class="arch-module__subs">
+                <span>Adaptive Scheduling</span>
+                <span>Behavioral Profiling</span>
+              </div>
+            </div>
+            <div class="arch-module">
+              <div class="arch-module__name">Auth &amp; Security</div>
+              <div class="arch-module__subs">
+                <span>JWT</span>
+                <span>Role-Based Access</span>
+                <span>TLS Encryption</span>
+              </div>
+            </div>
+          </div>
+          <div class="arch-tier__db">MongoDB Atlas</div>
+        </div>
+
+        <!-- Arrow 2→3 -->
+        <div class="arch-conn">
+          <div class="arch-conn__labels">
+            <span class="arch-conn__tag arch-conn__tag--wide">HTTP + WebSocket · Risk Scores · Alerts · Reports</span>
+          </div>
+          <div class="arch-conn__arrow">▼</div>
+        </div>
+
+        <!-- Tier 3 -->
+        <div class="arch-tier arch-tier--3">
+          <div class="arch-tier__header">
+            <span class="arch-tier__badge">T3</span>
+            TIER 3 — CAREGIVER MONITORING DASHBOARD
+          </div>
+          <div class="arch-tier__nodes">
+            <div class="arch-node"><span>Risk Score Trends</span></div>
+            <div class="arch-node"><span>Alert Management</span></div>
+            <div class="arch-node"><span>Cognitive Reports</span></div>
+            <div class="arch-node"><span>Patient Overview</span></div>
+          </div>
+        </div>
+
+      </div><!-- /arch-diagram -->
     </div>
   </section>
 
@@ -294,7 +287,7 @@
     <div class="container">
       <div class="section-header reveal">
         <span class="section-label">Technologies</span>
-        <h2 class="section-title">Built With <span>Modern AI & Mobile</span> Stack</h2>
+        <h2 class="section-title">Built With <span>Modern AI &amp; Mobile</span> Stack</h2>
       </div>
 
       <div class="tech-grid reveal">
@@ -318,15 +311,13 @@
     </div>
   </section>
 
+
   <!-- ══ CTA ══ -->
   <section class="cta-section">
     <div class="container">
       <div class="reveal">
         <h2 class="cta-section__title">Explore the Research</h2>
-        <p class="cta-section__desc">
-          Dive into our literature survey, methodology, results, and team behind
-          this AI-powered dementia care platform.
-        </p>
+        <p class="cta-section__desc">Dive into our literature survey, methodology, results, and team behind this AI-powered dementia care platform.</p>
         <div class="flex-center gap-4" style="flex-wrap:wrap">
           <a href="html/domain.html" class="btn btn--primary btn--lg">Read Domain →</a>
           <a href="html/about.html" class="btn btn--outline btn--lg">Meet the Team</a>
@@ -335,10 +326,8 @@
     </div>
   </section>
 
-  <!-- ══ FOOTER ══ -->
   <footer class="footer"></footer>
 
-  <!-- Scripts -->
   <script src="js/main.js"></script>
   <script src="js/components/navbar.js"></script>
   <script src="js/components/animations.js"></script>

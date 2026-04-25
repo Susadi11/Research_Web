@@ -31,10 +31,9 @@
     navEl.innerHTML = `
       <div class="navbar__inner">
         <a href="${h}" class="navbar__logo">
-          <div class="navbar__logo-icon">H</div>
           <div class="navbar__logo-text">
             <span class="navbar__logo-name">Hale</span>
-            <span class="navbar__logo-sub">Dementia Research · SLIIT</span>
+            <span class="navbar__logo-sub">Dementia Detection</span>
           </div>
         </a>
 
@@ -89,10 +88,9 @@
         <div class="footer__main">
           <div class="footer__brand">
             <div class="footer__logo">
-              <div class="footer__logo-icon">H</div>
               <div>
                 <div class="footer__logo-name">Hale</div>
-                <div class="footer__logo-sub">Dementia Research Project</div>
+                <div class="footer__logo-sub">Dementia Detection</div>
               </div>
             </div>
             <p class="footer__tagline">
