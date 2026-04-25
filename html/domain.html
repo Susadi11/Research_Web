@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Domain — Literature Survey, Research Gap, Problem, Objectives, Methodology & Technologies" />
+  <meta name="description" content="Domain — Research overview, methodology and technologies for the Hale platform" />
   <title>Domain | Hale</title>
 
   <link rel="stylesheet" href="../css/main.css" />
@@ -23,8 +23,35 @@
       <h1 class="page-banner__title">Domain Overview</h1>
       <p class="page-banner__desc">
         Literature survey, identified gaps, research problem, objectives, methodology
-        and technologies used in the CogniCare system.
+        and technologies used in the Hale platform.
       </p>
+    </div>
+  </div>
+
+  <!-- Research Stats Strip -->
+  <div class="research-stats">
+    <div class="container">
+      <div class="research-stats__inner">
+        <div class="research-stat">
+          <div class="research-stat__num">89.06%</div>
+          <div class="research-stat__label">System Accuracy</div>
+        </div>
+        <div class="research-stat__sep"></div>
+        <div class="research-stat">
+          <div class="research-stat__num">0.94</div>
+          <div class="research-stat__label">ROC-AUC Score</div>
+        </div>
+        <div class="research-stat__sep"></div>
+        <div class="research-stat">
+          <div class="research-stat__num">4</div>
+          <div class="research-stat__label">AI Modules</div>
+        </div>
+        <div class="research-stat__sep"></div>
+        <div class="research-stat">
+          <div class="research-stat__num">96.51%</div>
+          <div class="research-stat__label">Confusion Detection</div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -52,27 +79,32 @@
         <h2 class="section-title" style="text-align:left;margin-bottom:var(--space-4)">
           Literature <span>Survey</span>
         </h2>
-        <p style="color:var(--clr-text-secondary);line-height:var(--lh-relaxed);margin-bottom:var(--space-8);max-width:700px">
+        <p class="domain-intro">
           Dementia affects nearly 55 million people worldwide with 10 million new cases annually.
           We reviewed existing work across conversational AI, gamified cognition, automated assessment,
-          and smart reminders — identifying critical limitations in each area.
+          and smart reminders to identify critical limitations in each domain.
         </p>
 
         <div class="lit-grid">
           <div class="lit-card reveal">
-            <div class="lit-card__ref">Conversational AI [5,6,7,8]</div>
-            <div class="lit-card__title">Chatbots & Speech-Based Dementia Care</div>
+            <div class="lit-card__head">
+              <span class="lit-card__ref">Conversational AI [5,6,7,8]</span>
+              <div class="lit-card__icon"><i class="fa-solid fa-comments"></i></div>
+            </div>
+            <div class="lit-card__title">Chatbots and Speech Based Dementia Care</div>
             <div class="lit-card__finding">
-              Existing conversational AI systems lack evidence-based content, have restricted
-              scope, and do not track cognitive symptoms. Speech-based approaches show linguistic
-              features reliably differentiate dementia from healthy controls, but remain optimised
-              for episodic screening rather than continuous adaptive monitoring.
+              Existing conversational AI systems lack evidence based content and do not track cognitive symptoms.
+              Speech based approaches show linguistic features that reliably differentiate dementia from healthy controls,
+              but remain optimised for episodic screening rather than continuous adaptive monitoring.
             </div>
           </div>
 
           <div class="lit-card reveal reveal-delay-1">
-            <div class="lit-card__ref">Gamified Cognition [9,10]</div>
-            <div class="lit-card__title">Game-Based Cognitive Stimulation</div>
+            <div class="lit-card__head">
+              <span class="lit-card__ref">Gamified Cognition [9,10]</span>
+              <div class="lit-card__icon"><i class="fa-solid fa-gamepad"></i></div>
+            </div>
+            <div class="lit-card__title">Game Based Cognitive Stimulation</div>
             <div class="lit-card__finding">
               Memory skill games improve recall in elderly users; interactive systems support
               attention across all dementia stages. However, these approaches operate in isolation
@@ -81,22 +113,28 @@
           </div>
 
           <div class="lit-card reveal reveal-delay-2">
-            <div class="lit-card__ref">MMSE Automation [11,12]</div>
+            <div class="lit-card__head">
+              <span class="lit-card__ref">MMSE Automation [11,12]</span>
+              <div class="lit-card__icon"><i class="fa-solid fa-clipboard-list"></i></div>
+            </div>
             <div class="lit-card__title">Automated Cognitive Assessment</div>
             <div class="lit-card__finding">
-              Automated MMSE scoring increases accessibility for community-based detection.
-              Voice-based digital tools enable practical scoring without clinician contact.
-              Current methods provide only snapshot assessments — not continuous monitoring.
+              Automated MMSE scoring increases accessibility for community based detection.
+              Voice based digital tools enable practical scoring without clinician contact.
+              Current methods provide only snapshot assessments, not continuous monitoring.
             </div>
           </div>
 
           <div class="lit-card reveal reveal-delay-3">
-            <div class="lit-card__ref">Smart Reminders [13,14,15]</div>
-            <div class="lit-card__title">Medication & Cognitive Reminders</div>
+            <div class="lit-card__head">
+              <span class="lit-card__ref">Smart Reminders [13,14,15]</span>
+              <div class="lit-card__icon"><i class="fa-solid fa-bell"></i></div>
+            </div>
+            <div class="lit-card__title">Medication and Cognitive Reminders</div>
             <div class="lit-card__finding">
               Smart reminder systems improve adherence in mild dementia patients. Voice familiarity
-              enhances engagement. AI-powered apps support caregiver oversight. Temporal anomaly
-              detection highlights clinical relevance of shifts in verbal patterns.
+              enhances engagement. AI powered apps support caregiver oversight. Temporal anomaly
+              detection highlights the clinical relevance of shifts in verbal patterns.
             </div>
           </div>
         </div>
@@ -110,33 +148,40 @@
           Research <span>Gap</span>
         </h2>
 
-        <div class="gap-box reveal">
-          <div class="gap-box__title"><i class="fa-solid fa-triangle-exclamation"></i> Identified Gaps in Existing Work</div>
-          <div class="gap-list">
-            <div class="gap-list__item">
-              <div class="gap-list__icon">✕</div>
-              Existing approaches remain largely <strong>isolated</strong> — lacking integration
+        <div class="gap-grid reveal">
+          <div class="gap-item">
+            <div class="gap-item__icon"><i class="fa-solid fa-circle-xmark"></i></div>
+            <div class="gap-item__text">
+              Existing approaches remain largely <strong>isolated</strong>, lacking integration
               across modalities or longitudinal monitoring pipelines.
             </div>
-            <div class="gap-list__item">
-              <div class="gap-list__icon">✕</div>
-              Conventional monitoring uses <strong>long intervals between clinical assessments</strong>,
-              missing gradual cognitive decline in daily life.
+          </div>
+          <div class="gap-item">
+            <div class="gap-item__icon"><i class="fa-solid fa-circle-xmark"></i></div>
+            <div class="gap-item__text">
+              Conventional monitoring relies on <strong>infrequent clinical assessments</strong>,
+              missing gradual cognitive decline in everyday daily life.
             </div>
-            <div class="gap-list__item">
-              <div class="gap-list__icon">✕</div>
+          </div>
+          <div class="gap-item">
+            <div class="gap-item__icon"><i class="fa-solid fa-circle-xmark"></i></div>
+            <div class="gap-item__text">
               Conversational AI systems fail to adapt to <strong>evolving emotional and cognitive needs</strong>
               and provide no risk tracking mechanism.
             </div>
-            <div class="gap-list__item">
-              <div class="gap-list__icon">✕</div>
+          </div>
+          <div class="gap-item">
+            <div class="gap-item__icon"><i class="fa-solid fa-circle-xmark"></i></div>
+            <div class="gap-item__text">
               No unified platform combines <strong>conversational support, gamified assessment,
               automated MMSE, and adaptive reminders</strong> into a continuously monitored system.
             </div>
-            <div class="gap-list__item">
-              <div class="gap-list__icon">✕</div>
+          </div>
+          <div class="gap-item">
+            <div class="gap-item__icon"><i class="fa-solid fa-circle-xmark"></i></div>
+            <div class="gap-item__text">
               The <strong>stigma of cognitive testing</strong> discourages frequent clinical visits,
-              leaving many elderly people — especially those living independently — without early detection.
+              leaving elderly individuals living independently without early detection support.
             </div>
           </div>
         </div>
@@ -150,9 +195,10 @@
           Research <span>Problem</span>
         </h2>
 
-        <div class="problem-box reveal">
-          <p class="problem-quote">
-            How can a multimodal, AI-driven platform continuously monitor cognitive
+        <div class="problem-card reveal">
+          <div class="problem-card__bg"></div>
+          <p class="problem-statement">
+            How can a multimodal AI driven platform continuously monitor cognitive
             decline indicators in elderly individuals through naturalistic daily
             interactions — providing early dementia risk detection, empathetic
             conversational support, and proactive caregiver alerts — without requiring
@@ -171,43 +217,43 @@
 
         <div class="objective-list">
           <div class="objective-item reveal">
-            <div class="objective-num">1</div>
+            <div class="objective-num">01</div>
             <div class="objective-text">
-              Develop an <strong>emotion-aware conversational AI</strong> using a fine-tuned LLaMA 3.2 3B model
-              that analyzes 12 cognitive parameters from text, audio, and temporal features to estimate
+              Develop an <strong>emotion aware conversational AI</strong> using a fine tuned LLaMA 3.2 3B model
+              that analyses 12 cognitive parameters from text, audio, and temporal features to estimate
               dementia risk in real time.
             </div>
           </div>
           <div class="objective-item reveal reveal-delay-1">
-            <div class="objective-num">2</div>
+            <div class="objective-num">02</div>
             <div class="objective-text">
-              Design a <strong>gamified cognitive stimulation module</strong> with motor-baseline-calibrated
-              reaction-time measurement, LSTM-based temporal decline detection, and dementia risk classification
+              Design a <strong>gamified cognitive stimulation module</strong> with motor baseline calibrated
+              reaction time measurement, LSTM based temporal decline detection, and dementia risk classification
               from gameplay features.
             </div>
           </div>
           <div class="objective-item reveal reveal-delay-2">
-            <div class="objective-num">3</div>
+            <div class="objective-num">03</div>
             <div class="objective-text">
-              Build a fully <strong>voice-based automated MMSE screening system</strong> using multimodal
-              audio-text fusion, achieving accurate cognitive level classification without requiring
+              Build a fully <strong>voice based automated MMSE screening system</strong> using multimodal
+              audio text fusion, achieving accurate cognitive level classification without requiring
               clinician contact.
             </div>
           </div>
           <div class="objective-item reveal reveal-delay-3">
-            <div class="objective-num">4</div>
+            <div class="objective-num">04</div>
             <div class="objective-text">
-              Implement a <strong>context-aware adaptive reminder system</strong> that monitors adherence,
-              detects confusion via behavioral profiling, and escalates real-time caregiver alerts
+              Implement a <strong>context aware adaptive reminder system</strong> that monitors adherence,
+              detects confusion via behavioural profiling, and escalates real time caregiver alerts
               through WebSocket delivery.
             </div>
           </div>
           <div class="objective-item reveal reveal-delay-4">
-            <div class="objective-num">5</div>
+            <div class="objective-num">05</div>
             <div class="objective-text">
-              Integrate all modules into a <strong>three-tier distributed platform</strong> (Kotlin Multiplatform
+              Integrate all modules into a <strong>three tier distributed platform</strong> (Kotlin Multiplatform
               mobile, cloud backend, web dashboard) enabling longitudinal cognitive monitoring
-              with a weekly fused risk score achieving ROC-AUC ≥ 0.90.
+              with a weekly fused risk score achieving ROC-AUC of 0.94.
             </div>
           </div>
         </div>
@@ -223,86 +269,74 @@
 
         <div class="method-grid">
           <div class="method-card reveal">
-            <div class="method-card__header">
-              <div class="method-card__icon"><i class="fa-solid fa-database" style="color:var(--clr-primary)"></i></div>
-              <div class="method-card__title">Dataset & Preprocessing</div>
-            </div>
-            <div class="method-card__items">
-              <div class="method-card__item">DementiaBank Pitt Corpus — transcribed speech</div>
-              <div class="method-card__item">Mental Health Counselling Conversations — chatbot fine-tuning</div>
-              <div class="method-card__item">ADNI dataset — cognitive game calibration</div>
-              <div class="method-card__item">SpaCy tokenisation, POS tagging, BERT embeddings</div>
-              <div class="method-card__item">Librosa / FFmpeg for acoustic feature extraction</div>
+            <div class="method-card__icon"><i class="fa-solid fa-database"></i></div>
+            <div class="method-card__title">Dataset and Preprocessing</div>
+            <div class="method-card__chips">
+              <span class="method-chip">DementiaBank Pitt Corpus</span>
+              <span class="method-chip">Mental Health Conversations</span>
+              <span class="method-chip">ADNI Dataset</span>
+              <span class="method-chip">SpaCy + BERT Embeddings</span>
+              <span class="method-chip">Librosa / FFmpeg</span>
             </div>
           </div>
 
           <div class="method-card reveal reveal-delay-1">
-            <div class="method-card__header">
-              <div class="method-card__icon"><i class="fa-solid fa-brain" style="color:var(--clr-primary)"></i></div>
-              <div class="method-card__title">Conversational AI Module</div>
-            </div>
-            <div class="method-card__items">
-              <div class="method-card__item">LLaMA 3.2 3B Instruct + LoRA fine-tuning</div>
-              <div class="method-card__item">12-parameter cognitive scoring (0–36 scale)</div>
-              <div class="method-card__item">BERT + XGBoost text model (87.27%)</div>
-              <div class="method-card__item">Multimodal XGBoost fusion (89.06%)</div>
-              <div class="method-card__item">Weekly risk score with WEI progression tracking</div>
+            <div class="method-card__icon"><i class="fa-solid fa-comments"></i></div>
+            <div class="method-card__title">Conversational AI Module</div>
+            <div class="method-card__chips">
+              <span class="method-chip">LLaMA 3.2 3B + LoRA</span>
+              <span class="method-chip">12 Cognitive Parameters</span>
+              <span class="method-chip">BERT + XGBoost (87.27%)</span>
+              <span class="method-chip">Multimodal Fusion (89.06%)</span>
+              <span class="method-chip">WEI Risk Tracking</span>
             </div>
           </div>
 
           <div class="method-card reveal reveal-delay-2">
-            <div class="method-card__header">
-              <div class="method-card__icon"><i class="fa-solid fa-gamepad" style="color:var(--clr-primary)"></i></div>
-              <div class="method-card__title">Cognitive Game Module</div>
-            </div>
-            <div class="method-card__items">
-              <div class="method-card__item">Memory card matching with reaction-time logging</div>
-              <div class="method-card__item">Motor baseline calibration via tap test</div>
-              <div class="method-card__item">SAC &amp; IES feature derivation</div>
-              <div class="method-card__item">LSTM temporal decline detection (72.21%)</div>
-              <div class="method-card__item">Logistic Regression risk classifier (96.17%)</div>
+            <div class="method-card__icon"><i class="fa-solid fa-gamepad"></i></div>
+            <div class="method-card__title">Cognitive Game Module</div>
+            <div class="method-card__chips">
+              <span class="method-chip">Memory Card Matching</span>
+              <span class="method-chip">Motor Baseline Calibration</span>
+              <span class="method-chip">SAC and IES Features</span>
+              <span class="method-chip">LSTM Decline Detection (72.21%)</span>
+              <span class="method-chip">Risk Classifier (96.17%)</span>
             </div>
           </div>
 
           <div class="method-card reveal reveal-delay-3">
-            <div class="method-card__header">
-              <div class="method-card__icon"><i class="fa-solid fa-microphone" style="color:var(--clr-primary)"></i></div>
-              <div class="method-card__title">MMSE Screening Module</div>
-            </div>
-            <div class="method-card__items">
-              <div class="method-card__item">MFCCs, Chroma, Tonnetz, Spectral Contrast features</div>
-              <div class="method-card__item">TF-IDF + PCA for text feature reduction</div>
-              <div class="method-card__item">XGBoost audio model + Random Forest text model</div>
-              <div class="method-card__item">Late fusion (P_final = average of both probabilities)</div>
-              <div class="method-card__item">4-level cognitive classification (Normal → Severe)</div>
+            <div class="method-card__icon"><i class="fa-solid fa-microphone"></i></div>
+            <div class="method-card__title">MMSE Screening Module</div>
+            <div class="method-card__chips">
+              <span class="method-chip">MFCCs + Chroma + Spectral</span>
+              <span class="method-chip">TF-IDF + PCA Reduction</span>
+              <span class="method-chip">XGBoost + Random Forest</span>
+              <span class="method-chip">Late Fusion Strategy</span>
+              <span class="method-chip">4 Level Classification</span>
             </div>
           </div>
 
           <div class="method-card reveal reveal-delay-4">
-            <div class="method-card__header">
-              <div class="method-card__icon"><i class="fa-solid fa-bell" style="color:var(--clr-primary)"></i></div>
-              <div class="method-card__title">Smart Reminder Module</div>
-            </div>
-            <div class="method-card__items">
-              <div class="method-card__item">BERT-based NER (dslim/bert-NER) for task parsing</div>
-              <div class="method-card__item">Gradient Boosting risk scoring on 17 behavioral traits</div>
-              <div class="method-card__item">30-day rolling log for adaptive scheduling</div>
-              <div class="method-card__item">WebSocket real-time alarm delivery &amp; escalation</div>
-              <div class="method-card__item">Confusion detection at 96.51%, caregiver alerts at 96.05%</div>
+            <div class="method-card__icon"><i class="fa-solid fa-bell"></i></div>
+            <div class="method-card__title">Smart Reminder Module</div>
+            <div class="method-card__chips">
+              <span class="method-chip">BERT Based NER</span>
+              <span class="method-chip">Gradient Boosting (17 traits)</span>
+              <span class="method-chip">30 Day Rolling Log</span>
+              <span class="method-chip">WebSocket Delivery</span>
+              <span class="method-chip">Confusion Detection (96.51%)</span>
             </div>
           </div>
 
-          <div class="method-card reveal reveal-delay-5">
-            <div class="method-card__header">
-              <div class="method-card__icon"><i class="fa-solid fa-layer-group" style="color:var(--clr-primary)"></i></div>
-              <div class="method-card__title">Multimodal Weekly Fusion</div>
-            </div>
-            <div class="method-card__items">
-              <div class="method-card__item">Aggregate session scores from all 4 modules</div>
-              <div class="method-card__item">Weekly base score normalised to 0–100</div>
-              <div class="method-card__item">WEI captures temporal progression</div>
-              <div class="method-card__item">5 risk levels: Normal → Critical</div>
-              <div class="method-card__item">Fused ROC-AUC of 0.94 (3–5 pts above individual modules)</div>
+          <div class="method-card reveal reveal-delay-4">
+            <div class="method-card__icon"><i class="fa-solid fa-layer-group"></i></div>
+            <div class="method-card__title">Multimodal Weekly Fusion</div>
+            <div class="method-card__chips">
+              <span class="method-chip">4 Module Aggregation</span>
+              <span class="method-chip">Weekly Base Score (0–100)</span>
+              <span class="method-chip">WEI Temporal Progression</span>
+              <span class="method-chip">5 Risk Levels</span>
+              <span class="method-chip">ROC-AUC 0.94</span>
             </div>
           </div>
         </div>
@@ -316,66 +350,82 @@
           Technologies <span>Used</span>
         </h2>
 
-        <div class="reveal">
+        <div class="tech-section reveal">
+
           <div class="tech-category">
-            <div class="tech-category__title">Mobile & Frontend</div>
-            <div class="tech-tags">
-              <span class="tech-tag">Kotlin Multiplatform (KMP)</span>
-              <span class="tech-tag">Jetpack Compose</span>
-              <span class="tech-tag">MVVM Architecture</span>
-              <span class="tech-tag">Android · iOS · Web</span>
+            <div class="tech-category__icon"><i class="fa-solid fa-mobile-screen"></i></div>
+            <div class="tech-category__body">
+              <div class="tech-category__title">Mobile and Frontend</div>
+              <div class="tech-tags">
+                <span class="tech-tag">Kotlin Multiplatform (KMP)</span>
+                <span class="tech-tag">Jetpack Compose</span>
+                <span class="tech-tag">MVVM Architecture</span>
+                <span class="tech-tag">Android · iOS · Web</span>
+              </div>
             </div>
           </div>
 
           <div class="tech-category">
-            <div class="tech-category__title">AI / Machine Learning</div>
-            <div class="tech-tags">
-              <span class="tech-tag">LLaMA 3.2 3B Instruct</span>
-              <span class="tech-tag">LoRA Fine-tuning</span>
-              <span class="tech-tag">XGBoost</span>
-              <span class="tech-tag">LSTM</span>
-              <span class="tech-tag">Random Forest</span>
-              <span class="tech-tag">Gradient Boosting</span>
-              <span class="tech-tag">Logistic Regression</span>
-              <span class="tech-tag">BERT-base-uncased</span>
-              <span class="tech-tag">dslim/bert-NER</span>
-              <span class="tech-tag">SMOTE</span>
+            <div class="tech-category__icon"><i class="fa-solid fa-microchip"></i></div>
+            <div class="tech-category__body">
+              <div class="tech-category__title">AI and Machine Learning</div>
+              <div class="tech-tags">
+                <span class="tech-tag">LLaMA 3.2 3B Instruct</span>
+                <span class="tech-tag">LoRA Finetuning</span>
+                <span class="tech-tag">XGBoost</span>
+                <span class="tech-tag">LSTM</span>
+                <span class="tech-tag">Random Forest</span>
+                <span class="tech-tag">Gradient Boosting</span>
+                <span class="tech-tag">Logistic Regression</span>
+                <span class="tech-tag">BERT base uncased</span>
+                <span class="tech-tag">dslim/bert-NER</span>
+                <span class="tech-tag">SMOTE</span>
+              </div>
             </div>
           </div>
 
           <div class="tech-category">
-            <div class="tech-category__title">NLP & Speech Processing</div>
-            <div class="tech-tags">
-              <span class="tech-tag">SpaCy</span>
-              <span class="tech-tag">Whisper ASR (OpenAI)</span>
-              <span class="tech-tag">Librosa</span>
-              <span class="tech-tag">FFmpeg</span>
-              <span class="tech-tag">TF-IDF Vectorization</span>
-              <span class="tech-tag">PCA</span>
-              <span class="tech-tag">date parser</span>
+            <div class="tech-category__icon"><i class="fa-solid fa-language"></i></div>
+            <div class="tech-category__body">
+              <div class="tech-category__title">NLP and Speech Processing</div>
+              <div class="tech-tags">
+                <span class="tech-tag">SpaCy</span>
+                <span class="tech-tag">Whisper ASR (OpenAI)</span>
+                <span class="tech-tag">Librosa</span>
+                <span class="tech-tag">FFmpeg</span>
+                <span class="tech-tag">TF-IDF Vectorization</span>
+                <span class="tech-tag">PCA</span>
+              </div>
             </div>
           </div>
 
           <div class="tech-category">
-            <div class="tech-category__title">Backend & Data</div>
-            <div class="tech-tags">
-              <span class="tech-tag">MongoDB Atlas</span>
-              <span class="tech-tag">JWT Authentication</span>
-              <span class="tech-tag">WebSocket</span>
-              <span class="tech-tag">HTTP / REST (JSON)</span>
-              <span class="tech-tag">TLS Encryption</span>
-              <span class="tech-tag">RBAC</span>
+            <div class="tech-category__icon"><i class="fa-solid fa-server"></i></div>
+            <div class="tech-category__body">
+              <div class="tech-category__title">Backend and Data</div>
+              <div class="tech-tags">
+                <span class="tech-tag">MongoDB Atlas</span>
+                <span class="tech-tag">JWT Authentication</span>
+                <span class="tech-tag">WebSocket</span>
+                <span class="tech-tag">REST API (JSON)</span>
+                <span class="tech-tag">TLS Encryption</span>
+                <span class="tech-tag">RBAC</span>
+              </div>
             </div>
           </div>
 
           <div class="tech-category">
-            <div class="tech-category__title">Datasets</div>
-            <div class="tech-tags">
-              <span class="tech-tag">DementiaBank Pitt Corpus</span>
-              <span class="tech-tag">Mental Health Counselling Conversations</span>
-              <span class="tech-tag">ADNI (Alzheimer's Disease Neuroimaging Initiative)</span>
+            <div class="tech-category__icon"><i class="fa-solid fa-database"></i></div>
+            <div class="tech-category__body">
+              <div class="tech-category__title">Datasets</div>
+              <div class="tech-tags">
+                <span class="tech-tag">DementiaBank Pitt Corpus</span>
+                <span class="tech-tag">Mental Health Counselling Conversations</span>
+                <span class="tech-tag">ADNI (Alzheimer's Disease Neuroimaging Initiative)</span>
+              </div>
             </div>
           </div>
+
         </div>
       </section>
 
