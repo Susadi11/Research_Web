@@ -107,26 +107,26 @@
           <div>
             <div class="footer__col-title">Navigation</div>
             <ul class="footer__links">
-              <li><a class="footer__link" href="${h}"><i class="fa-solid fa-house fa-fw"></i> Home</a></li>
-              <li><a class="footer__link" href="${b}domain.html"><i class="fa-solid fa-flask fa-fw"></i> Domain</a></li>
-              <li><a class="footer__link" href="${b}milestones.html"><i class="fa-solid fa-bullseye fa-fw"></i> Milestones</a></li>
+              <li><a class="footer__link" href="${h}">Home</a></li>
+              <li><a class="footer__link" href="${b}domain.html">Domain</a></li>
+              <li><a class="footer__link" href="${b}milestones.html">Milestones</a></li>
             </ul>
           </div>
 
           <div>
             <div class="footer__col-title">Resources</div>
             <ul class="footer__links">
-              <li><a class="footer__link" href="${b}documents.html"><i class="fa-regular fa-file-lines fa-fw"></i> Documents</a></li>
-              <li><a class="footer__link" href="${b}presentations.html"><i class="fa-solid fa-chart-bar fa-fw"></i> Presentations</a></li>
+              <li><a class="footer__link" href="${b}documents.html">Documents</a></li>
+              <li><a class="footer__link" href="${b}presentations.html">Presentations</a></li>
             </ul>
           </div>
 
           <div>
             <div class="footer__col-title">Team</div>
             <ul class="footer__links">
-              <li><a class="footer__link" href="${b}about.html"><i class="fa-solid fa-users fa-fw"></i> About Us</a></li>
-              <li><a class="footer__link" href="${b}contact.html"><i class="fa-solid fa-envelope fa-fw"></i> Contact</a></li>
-              <li><a class="footer__link" href="mailto:it22180384@my.sliit.lk"><i class="fa-solid fa-paper-plane fa-fw"></i> Email Us</a></li>
+              <li><a class="footer__link" href="${b}about.html">About Us</a></li>
+              <li><a class="footer__link" href="${b}contact.html">Contact</a></li>
+              <li><a class="footer__link" href="mailto:it22180384@my.sliit.lk">Email Us</a></li>
             </ul>
           </div>
         </div>
