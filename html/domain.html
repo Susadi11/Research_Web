@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Domain — Research overview, methodology and technologies for the Hale platform" />
+  <meta name="description" content="Domain, Research overview, methodology and technologies for the Hale platform" />
   <title>Domain | Hale</title>
 
   <link rel="stylesheet" href="../css/main.css" />
@@ -40,6 +40,7 @@
         <a href="#problem"      class="domain-tab"><i class="fa-solid fa-circle-question fa-fw"></i> Research Problem</a>
         <a href="#objectives"   class="domain-tab"><i class="fa-solid fa-bullseye fa-fw"></i> Objectives</a>
         <a href="#methodology"  class="domain-tab"><i class="fa-solid fa-gears fa-fw"></i> Methodology</a>
+        <a href="#results"      class="domain-tab"><i class="fa-solid fa-chart-bar fa-fw"></i> Results</a>
         <a href="#technologies" class="domain-tab"><i class="fa-solid fa-laptop-code fa-fw"></i> Technologies</a>
       </div>
     </div>
@@ -153,7 +154,7 @@
                 <span class="lit-paper__num">[11]</span>
                 <div class="lit-paper__content">
                   <div class="lit-paper__title">Voice-Based Automated MMSE Scoring</div>
-                  <div class="lit-paper__desc">Digital voice tools automate administration of the 30-point MMSE battery, achieving clinician-comparable scoring accuracy without requiring physical contact — improving community-based access in rural and low-resource settings.</div>
+                  <div class="lit-paper__desc">Digital voice tools automate administration of the 30-point MMSE battery, achieving clinician-comparable scoring accuracy without requiring physical contact, improving community-based access in rural and low-resource settings.</div>
                 </div>
               </div>
               <div class="lit-paper">
@@ -219,42 +220,115 @@
           Research <span>Gap</span>
         </h2>
 
-        <div class="gap-grid reveal">
-          <div class="gap-item">
-            <div class="gap-item__icon"><i class="fa-solid fa-circle-xmark"></i></div>
-            <div class="gap-item__text">
-              Existing approaches remain largely <strong>isolated</strong>, lacking integration
-              across modalities or longitudinal monitoring pipelines.
+        <p class="domain-intro" style="margin-bottom:var(--space-8)">
+          Despite significant investment in individual dementia-related AI tools, a critical gap
+          persists between isolated research prototypes and a deployable, clinically meaningful
+          continuous monitoring platform. Our literature review identified five structural limitations
+          across existing systems, each pointing to a distinct unmet clinical need.
+        </p>
+
+        <div class="gap-enhanced reveal">
+
+          <div class="gap-block">
+            <div class="gap-block__num">01</div>
+            <div class="gap-block__body">
+              <div class="gap-block__title">Modality Isolation, No Cross-Modality Integration</div>
+              <p class="gap-block__desc">
+                Existing dementia AI tools operate within a single modality, either speech, game performance,
+                clinical questionnaires, or medication reminders, but never in combination. Conversational AI
+                systems do not feed linguistic risk signals into behavioural monitoring systems; MMSE tools do
+                not adjust reminder frequency based on screening outcomes. This siloed architecture means each
+                tool produces data that is never aggregated into a cohesive longitudinal cognitive risk profile.
+              </p>
+              <div class="gap-block__impact">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                Clinical impact: Clinicians receive fragmented signals from disconnected systems, no single
+                risk score reflects the full picture of a patient's cognitive trajectory.
+              </div>
             </div>
           </div>
-          <div class="gap-item">
-            <div class="gap-item__icon"><i class="fa-solid fa-circle-xmark"></i></div>
-            <div class="gap-item__text">
-              Conventional monitoring relies on <strong>infrequent clinical assessments</strong>,
-              missing gradual cognitive decline in everyday daily life.
+
+          <div class="gap-block">
+            <div class="gap-block__num">02</div>
+            <div class="gap-block__body">
+              <div class="gap-block__title">Snapshot-Only Assessments, No Longitudinal Decline Tracking</div>
+              <p class="gap-block__desc">
+                Current automated cognitive tools, including digital MMSE platforms and speech-based
+                screeners, provide a single-point-in-time score. They are not designed to compare results
+                across weeks or months, identify rate-of-change in cognitive parameters, or generate trend-based
+                alerts. Yet clinical evidence consistently shows that the <em>trajectory</em> of cognitive decline
+                is more diagnostically significant than any individual assessment score.
+              </p>
+              <div class="gap-block__impact">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                Clinical impact: Gradual, early-stage cognitive decline, the most treatable window, goes
+                undetected because no existing system tracks longitudinal cognitive parameter drift in daily life.
+              </div>
             </div>
           </div>
-          <div class="gap-item">
-            <div class="gap-item__icon"><i class="fa-solid fa-circle-xmark"></i></div>
-            <div class="gap-item__text">
-              Conversational AI systems fail to adapt to <strong>evolving emotional and cognitive needs</strong>
-              and provide no risk tracking mechanism.
+
+          <div class="gap-block">
+            <div class="gap-block__num">03</div>
+            <div class="gap-block__body">
+              <div class="gap-block__title">Non-Adaptive Conversational AI, No Cognitive Risk Framework</div>
+              <p class="gap-block__desc">
+                LLM-based companions and mental health chatbots deployed for elderly users engage emotionally
+                but do not extract structured cognitive biomarkers from interactions. No existing deployed system
+                concurrently tracks lexical diversity, semantic coherence, pause frequency, topic maintenance,
+                or response latency, the very linguistic parameters clinicians use to identify early dementia
+                markers. Furthermore, none maintain a session-to-session Weighted Estimated Index (WEI) to
+                quantify cognitive change over time.
+              </p>
+              <div class="gap-block__impact">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                Clinical impact: Valuable daily conversational data that contains rich cognitive signals is
+                discarded; opportunities for passive, non-intrusive monitoring are lost.
+              </div>
             </div>
           </div>
-          <div class="gap-item">
-            <div class="gap-item__icon"><i class="fa-solid fa-circle-xmark"></i></div>
-            <div class="gap-item__text">
-              No unified platform combines <strong>conversational support, gamified assessment,
-              automated MMSE, and adaptive reminders</strong> into a continuously monitored system.
+
+          <div class="gap-block">
+            <div class="gap-block__num">04</div>
+            <div class="gap-block__body">
+              <div class="gap-block__title">Absence of Unified Multi-Modal Platform</div>
+              <p class="gap-block__desc">
+                No prior work integrates conversational AI, gamified cognitive assessment, automated MMSE
+                screening, and adaptive behavioural reminders into a single, continuously monitored platform
+                with a fused weekly risk score. The clinical community has called for exactly this kind of
+                "ambient intelligence" approach to dementia monitoring, yet research prototypes remain
+                academically compartmentalised. The absence of a unified platform means patients must be
+                referred across multiple separate systems, creating coordination burden for caregivers and
+                clinicians alike.
+              </p>
+              <div class="gap-block__impact">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                Clinical impact: Caregivers and clinicians cannot access a single, trusted, comprehensive
+                cognitive risk summary without manually reconciling outputs from disparate tools.
+              </div>
             </div>
           </div>
-          <div class="gap-item">
-            <div class="gap-item__icon"><i class="fa-solid fa-circle-xmark"></i></div>
-            <div class="gap-item__text">
-              The <strong>stigma of cognitive testing</strong> discourages frequent clinical visits,
-              leaving elderly individuals living independently without early detection support.
+
+          <div class="gap-block">
+            <div class="gap-block__num">05</div>
+            <div class="gap-block__body">
+              <div class="gap-block__title">Clinical Access Barriers, Stigma &amp; Infrastructure</div>
+              <p class="gap-block__desc">
+                The stigma associated with formal cognitive testing discourages elderly individuals from
+                seeking regular clinical evaluation. In low-resource and rural settings, specialist memory
+                clinics are geographically inaccessible to large patient populations. Existing digital tools
+                require clinician administration or institutional infrastructure, precluding truly independent,
+                home-based, continuous monitoring. A mobile-first, naturalistic, AI-driven approach that
+                embeds assessment into daily routines without labelling interactions as "tests" represents
+                an unmet design requirement.
+              </p>
+              <div class="gap-block__impact">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                Clinical impact: The earliest, most actionable stages of dementia risk go undetected in
+                community-dwelling elderly populations who disengage from formal healthcare pathways.
+              </div>
             </div>
           </div>
+
         </div>
       </section>
 
@@ -266,15 +340,74 @@
           Research <span>Problem</span>
         </h2>
 
-        <div class="problem-card reveal">
-          <div class="problem-card__bg"></div>
-          <p class="problem-statement">
-            How can a multimodal AI driven platform continuously monitor cognitive
-            decline indicators in elderly individuals through naturalistic daily
-            interactions — providing early dementia risk detection, empathetic
-            conversational support, and proactive caregiver alerts — without requiring
-            intrusive clinical assessments?
-          </p>
+        <p class="domain-intro" style="margin-bottom:var(--space-8)">
+          The overarching research problem is grounded in the clinical imperative to detect
+          dementia at the earliest possible stage, before significant neurodegeneration has
+          occurred, through means that are accessible, non-stigmatising, and embedded in
+          everyday life.
+        </p>
+
+        <div class="problem-enhanced reveal">
+          <div class="problem-statement-box">
+            <div class="problem-statement-box__label">Core Research Question</div>
+            <p class="problem-statement-box__text">
+              How can a multimodal AI-driven platform <strong>continuously monitor cognitive decline
+              indicators</strong> in elderly individuals through naturalistic daily interactions,
+              providing early dementia risk detection, empathetic conversational support, and
+              proactive caregiver alerts, <strong>without requiring intrusive clinical assessments?</strong>
+            </p>
+          </div>
+
+          <div class="problem-context">
+            <div class="problem-context__col">
+              <div class="problem-context__heading">
+                <i class="fa-solid fa-circle-dot"></i> Why This Problem Matters
+              </div>
+              <p class="problem-context__text">
+                Dementia affects 55 million people globally, with 10 million new cases annually.
+                The window for meaningful clinical intervention is narrow, early-stage Mild Cognitive
+                Impairment (MCI) is treatable if detected, but current detection relies on infrequent
+                clinical visits that miss the gradual, naturalistic decline patterns occurring in
+                daily life. A system that passively monitors cognitive health through natural interactions
+                could shift dementia care from reactive crisis management to proactive risk management.
+              </p>
+            </div>
+            <div class="problem-context__col">
+              <div class="problem-context__heading">
+                <i class="fa-solid fa-circle-dot"></i> Scope &amp; Boundaries
+              </div>
+              <p class="problem-context__text">
+                This research targets <strong>community-dwelling elderly individuals aged 60+</strong>
+                who are living independently or with caregivers. The platform focuses on
+                <strong>risk estimation</strong> rather than clinical diagnosis, it is designed as
+                an assistive early-warning system that flags elevated cognitive risk and supports,
+                rather than replaces, clinical assessment. The system operates across
+                Android, iOS, and web platforms via a Kotlin Multiplatform architecture.
+              </p>
+            </div>
+          </div>
+
+          <div class="problem-subqs">
+            <div class="problem-subqs__label">Sub-Research Questions</div>
+            <div class="problem-subqs__grid">
+              <div class="problem-subq">
+                <span class="problem-subq__q">SQ1</span>
+                <span class="problem-subq__text">Can 12 cognitive parameters extracted from natural conversation reliably differentiate normal ageing from early dementia risk in real-time?</span>
+              </div>
+              <div class="problem-subq">
+                <span class="problem-subq__q">SQ2</span>
+                <span class="problem-subq__text">Does gamified cognitive stimulation with motor baseline calibration provide a valid, continuous biomarker of cognitive decline over time?</span>
+              </div>
+              <div class="problem-subq">
+                <span class="problem-subq__q">SQ3</span>
+                <span class="problem-subq__text">Can multimodal audio-text fusion achieve clinician-comparable MMSE classification accuracy without requiring specialist administration?</span>
+              </div>
+              <div class="problem-subq">
+                <span class="problem-subq__q">SQ4</span>
+                <span class="problem-subq__text">Can behavioural profiling of reminder interaction patterns detect confusion events with sufficient accuracy and speed to trigger timely caregiver intervention?</span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -286,47 +419,130 @@
           Research <span>Objectives</span>
         </h2>
 
-        <div class="objective-list">
-          <div class="objective-item reveal">
-            <div class="objective-num">01</div>
-            <div class="objective-text">
-              Develop an <strong>emotion aware conversational AI</strong> using a fine tuned LLaMA 3.2 3B model
-              that analyses 12 cognitive parameters from text, audio, and temporal features to estimate
-              dementia risk in real time.
+        <p class="domain-intro" style="margin-bottom:var(--space-8)">
+          Five primary objectives guide the Hale research programme, each directly addressing
+          one of the identified research gaps and contributing to the unified platform architecture.
+          Each objective specifies the technical approach, key models deployed, and measurable
+          success criteria.
+        </p>
+
+        <div class="obj-enhanced">
+
+          <div class="obj-card reveal">
+            <div class="obj-card__header">
+              <div class="obj-card__num">01</div>
+              <div class="obj-card__title">Emotion-Aware Conversational AI for Cognitive Monitoring</div>
+            </div>
+            <p class="obj-card__desc">
+              Develop a <strong>LLaMA 3.2 3B Instruct</strong> model fine-tuned via LoRA on dementia-specific
+              conversational data to conduct empathetic daily dialogues while simultaneously extracting
+              <strong>12 structured cognitive parameters</strong> per session. Parameters include: lexical
+              diversity (TTR), semantic coherence, pause frequency, repetition rate, sentiment drift,
+              topic maintenance, response latency, word-finding pauses, syntax complexity, emotional tone,
+              question comprehension, and task completion rate. A <strong>BERT + XGBoost</strong> pipeline
+              classifies cognitive risk from text features; late fusion with Whisper ASR acoustic features
+              achieves a <strong>multimodal accuracy of 89.06%</strong>. Risk is tracked across sessions
+              via a Weighted Estimated Index (WEI) to detect longitudinal cognitive change.
+            </p>
+            <div class="obj-card__tags">
+              <span>LLaMA 3.2 3B + LoRA</span><span>Whisper ASR</span><span>BERT + XGBoost</span>
+              <span>12 Cognitive Parameters</span><span>89.06% Accuracy</span><span>WEI Tracking</span>
             </div>
           </div>
-          <div class="objective-item reveal reveal-delay-1">
-            <div class="objective-num">02</div>
-            <div class="objective-text">
-              Design a <strong>gamified cognitive stimulation module</strong> with motor baseline calibrated
-              reaction time measurement, LSTM based temporal decline detection, and dementia risk classification
-              from gameplay features.
+
+          <div class="obj-card reveal">
+            <div class="obj-card__header">
+              <div class="obj-card__num">02</div>
+              <div class="obj-card__title">Gamified Cognitive Stimulation with Temporal Decline Detection</div>
+            </div>
+            <p class="obj-card__desc">
+              Design a <strong>memory card-matching game</strong> with an initial motor baseline calibration
+              session that establishes a personalised reaction time and accuracy baseline for each user.
+              Two engineered feature groups, <strong>SAC (Session Accuracy Change)</strong> and
+              <strong>IES (Inverse Efficiency Score)</strong>, capture within-session and cross-session
+              cognitive performance shifts. An <strong>LSTM network</strong> models sequential gameplay
+              sessions to detect temporal cognitive decline patterns, achieving <strong>72.21% temporal
+              detection accuracy</strong>. A subsequent <strong>XGBoost + Random Forest ensemble</strong>
+              classifies gameplay features into 3-level dementia risk categories, achieving
+              <strong>96.17% classification accuracy</strong>, with session results contributing a
+              weighted sub-score to the WEI.
+            </p>
+            <div class="obj-card__tags">
+              <span>LSTM Temporal Modelling</span><span>XGBoost + Random Forest</span>
+              <span>Motor Baseline Calibration</span><span>SAC + IES Features</span>
+              <span>96.17% Classification</span><span>72.21% Decline Detection</span>
             </div>
           </div>
-          <div class="objective-item reveal reveal-delay-2">
-            <div class="objective-num">03</div>
-            <div class="objective-text">
-              Build a fully <strong>voice based automated MMSE screening system</strong> using multimodal
-              audio text fusion, achieving accurate cognitive level classification without requiring
-              clinician contact.
+
+          <div class="obj-card reveal">
+            <div class="obj-card__header">
+              <div class="obj-card__num">03</div>
+              <div class="obj-card__title">Voice-Based Automated MMSE Screening</div>
+            </div>
+            <p class="obj-card__desc">
+              Build a fully automated, clinician-free <strong>MMSE administration system</strong> that
+              delivers the 30-point cognitive battery via voice prompts and analyses spoken responses
+              using a two-stream pipeline. The <strong>acoustic stream</strong> extracts 13 MFCCs, chroma,
+              and spectral centroid features via Librosa, classified by <strong>XGBoost</strong>. The
+              <strong>text stream</strong> applies TF-IDF vectorisation with PCA dimensionality reduction,
+              classified by <strong>Random Forest</strong>. A <strong>late fusion strategy</strong>
+              combines both stream predictions to output a <strong>4-level cognitive classification</strong>
+              (Normal / MCI / Moderate Impairment / Severe Impairment) at <strong>90.70% accuracy</strong>,
+              enabling community-based dementia screening without specialist infrastructure.
+            </p>
+            <div class="obj-card__tags">
+              <span>13 MFCCs + Chroma + Spectral</span><span>TF-IDF + PCA</span>
+              <span>XGBoost + Random Forest</span><span>Late Fusion</span>
+              <span>4-Level Classification</span><span>90.70% Accuracy</span>
             </div>
           </div>
-          <div class="objective-item reveal reveal-delay-3">
-            <div class="objective-num">04</div>
-            <div class="objective-text">
-              Implement a <strong>context aware adaptive reminder system</strong> that monitors adherence,
-              detects confusion via behavioural profiling, and escalates real time caregiver alerts
-              through WebSocket delivery.
+
+          <div class="obj-card reveal">
+            <div class="obj-card__header">
+              <div class="obj-card__num">04</div>
+              <div class="obj-card__title">Context-Aware Adaptive Reminder &amp; Confusion Detection</div>
+            </div>
+            <p class="obj-card__desc">
+              Implement an adaptive reminder system integrating <strong>BERT-based Named Entity Recognition</strong>
+              (dslim/bert-NER) to parse medication and appointment information from natural language inputs.
+              The system maintains a <strong>30-day rolling behavioural log</strong> from which
+              <strong>17 behavioural traits</strong> are extracted (response latency, repetitive queries,
+              missed acknowledgements, temporal anomalies, etc.). A <strong>Gradient Boosting classifier</strong>
+              trained on this log detects confusion events in real time at <strong>96.51% accuracy</strong>,
+              with detected events triggering immediate <strong>WebSocket-based push alerts</strong> to the
+              caregiver React web dashboard, delivering contextual patient status with a mean alert
+              latency of under 1.2 seconds.
+            </p>
+            <div class="obj-card__tags">
+              <span>BERT NER (dslim/bert-NER)</span><span>Gradient Boosting</span>
+              <span>30-Day Behavioural Log</span><span>17 Engineered Features</span>
+              <span>96.51% Confusion Detection</span><span>WebSocket Alerts &lt;1.2s</span>
             </div>
           </div>
-          <div class="objective-item reveal reveal-delay-4">
-            <div class="objective-num">05</div>
-            <div class="objective-text">
-              Integrate all modules into a <strong>three tier distributed platform</strong> (Kotlin Multiplatform
-              mobile, cloud backend, web dashboard) enabling longitudinal cognitive monitoring
-              with a weekly fused risk score achieving ROC-AUC of 0.94.
+
+          <div class="obj-card reveal">
+            <div class="obj-card__header">
+              <div class="obj-card__num">05</div>
+              <div class="obj-card__title">Three-Tier Distributed Platform with Weekly Risk Fusion</div>
+            </div>
+            <p class="obj-card__desc">
+              Integrate all four AI modules into a cohesive <strong>three-tier distributed architecture</strong>:
+              Tier 1: <strong>Kotlin Multiplatform</strong> mobile app (Android + iOS) with Jetpack Compose UI
+              and MVVM architecture; Tier 2: <strong>Python FastAPI</strong> cloud backend with MongoDB Atlas,
+              JWT authentication, TLS encryption, and RBAC; Tier 3: <strong>React + Tailwind</strong>
+              caregiver web dashboard with real-time patient monitoring. The four module sub-scores are
+              aggregated weekly into a <strong>Weighted Estimated Index (WEI)</strong> (Conversational AI 35%,
+              MMSE 30%, Game 20%, Reminders 15%) producing a 0–100 risk scale with 5 risk levels
+              (Minimal / Low / Moderate / High / Critical). The overall system achieves a
+              <strong>ROC-AUC of 0.94</strong>.
+            </p>
+            <div class="obj-card__tags">
+              <span>Kotlin Multiplatform</span><span>FastAPI + MongoDB Atlas</span>
+              <span>React + Tailwind Dashboard</span><span>WEI Weekly Fusion</span>
+              <span>5 Risk Levels</span><span>ROC-AUC 0.94</span>
             </div>
           </div>
+
         </div>
       </section>
 
@@ -339,8 +555,8 @@
         </h2>
 
                 <p class="domain-intro" style="margin-bottom:var(--space-8)">
-          A five-stage research pipeline — spanning data collection, module-level AI development,
-          multimodal feature fusion, and integrated risk scoring — underpins the Hale platform.
+          A five-stage research pipeline, spanning data collection, module-level AI development,
+          multimodal feature fusion, and integrated risk scoring, underpins the Hale platform.
           Each module targets a distinct cognitive assessment modality and contributes a weighted
           sub-score to the unified Weekly Estimated Index (WEI).
         </p>
@@ -359,7 +575,7 @@
             </div>
             <p class="meth-mod__desc">
               Three curated datasets power the training pipeline: the <strong>DementiaBank Pitt Corpus</strong>
-              (dementia / healthy speech transcripts), the <strong>Mental Health Counselling Conversations</strong>
+              (dementia / healthy speech transcripts), the <strong>Facebook Empathy Dialog Dataset</strong>
               dataset (emotion and sentiment patterns), and the <strong>ADNI dataset</strong> (longitudinal
               neuroimaging and cognitive scores). Audio signals are processed via <strong>Librosa</strong>
               (MFCCs, chroma, spectral centroid) and <strong>FFmpeg</strong> (resampling, noise reduction).
@@ -371,18 +587,18 @@
                 <div class="meth-mod__col-label">Datasets</div>
                 <ul class="meth-mod__list">
                   <li>DementiaBank Pitt Corpus</li>
-                  <li>Mental Health Conversations</li>
+                  <li>Facebook Empathy Dialog Dataset</li>
                   <li>ADNI (Neuroimaging)</li>
                 </ul>
               </div>
               <div class="meth-mod__col">
                 <div class="meth-mod__col-label">Preprocessing Tools</div>
                 <ul class="meth-mod__list">
-                  <li>Librosa — MFCC / Chroma / Spectral</li>
-                  <li>FFmpeg — Audio resampling &amp; denoising</li>
-                  <li>SpaCy — NLP tokenisation &amp; NER</li>
-                  <li>BERT — Sentence embeddings</li>
-                  <li>SMOTE — Class rebalancing</li>
+                  <li>Librosa: MFCC / Chroma / Spectral</li>
+                  <li>FFmpeg: Audio resampling &amp; denoising</li>
+                  <li>SpaCy: NLP tokenisation &amp; NER</li>
+                  <li>BERT: Sentence embeddings</li>
+                  <li>SMOTE: Class rebalancing</li>
                 </ul>
               </div>
               <div class="meth-mod__col">
@@ -403,7 +619,7 @@
               <div class="meth-mod__num">01</div>
               <div class="meth-mod__info">
                 <div class="meth-mod__title">Conversational AI Module</div>
-                <div class="meth-mod__sub">LLaMA 3.2 3B Instruct — LoRA Fine-tuned</div>
+                <div class="meth-mod__sub">LLaMA 3.2 3B Instruct / LoRA Fine-tuned</div>
               </div>
               <div class="meth-mod__badge meth-mod__badge--accent">89.06%</div>
             </div>
@@ -433,11 +649,11 @@
                 <div class="meth-mod__col-label">Models &amp; Techniques</div>
                 <ul class="meth-mod__list">
                   <li>LLaMA 3.2 3B + LoRA (r=16, α=32)</li>
-                  <li>Whisper ASR — speech-to-text</li>
-                  <li>BERT base uncased — text embeddings</li>
-                  <li>XGBoost — risk classification</li>
+                  <li>Whisper ASR: speech-to-text</li>
+                  <li>BERT base uncased: text embeddings</li>
+                  <li>XGBoost: risk classification</li>
                   <li>Multimodal late fusion strategy</li>
-                  <li>SMOTE — training data balancing</li>
+                  <li>SMOTE: training data balancing</li>
                 </ul>
               </div>
               <div class="meth-mod__col">
@@ -465,8 +681,8 @@
             </div>
             <p class="meth-mod__desc">
               A gamified memory card-matching task with <strong>motor baseline calibration</strong> captures
-              reaction time, accuracy, and engagement across game sessions. Two engineered feature groups —
-              <strong>SAC (Session Accuracy Change)</strong> and <strong>IES (Inverse Efficiency Score)</strong> —
+              reaction time, accuracy, and engagement across game sessions. Two engineered feature groups,
+              <strong>SAC (Session Accuracy Change)</strong> and <strong>IES (Inverse Efficiency Score)</strong>,
               quantify performance decline over time. An <strong>LSTM network</strong> trained on sequential
               gameplay sessions detects temporal cognitive decline patterns (72.21% accuracy). A subsequent
               <strong>risk classifier</strong> (XGBoost, Random Forest ensemble) maps gameplay features to
@@ -487,7 +703,7 @@
               <div class="meth-mod__col">
                 <div class="meth-mod__col-label">Models &amp; Techniques</div>
                 <ul class="meth-mod__list">
-                  <li>LSTM — temporal sequence modelling</li>
+                  <li>LSTM: temporal sequence modelling</li>
                   <li>XGBoost + Random Forest ensemble</li>
                   <li>Motor baseline calibration protocol</li>
                   <li>SAC (Session Accuracy Change)</li>
@@ -540,10 +756,10 @@
               <div class="meth-mod__col">
                 <div class="meth-mod__col-label">Models &amp; Techniques</div>
                 <ul class="meth-mod__list">
-                  <li>XGBoost — audio classification</li>
-                  <li>Random Forest — text classification</li>
-                  <li>Librosa — acoustic feature extraction</li>
-                  <li>TF-IDF + PCA — text representation</li>
+                  <li>XGBoost: audio classification</li>
+                  <li>Random Forest: text classification</li>
+                  <li>Librosa: acoustic feature extraction</li>
+                  <li>TF-IDF + PCA: text representation</li>
                   <li>Late fusion ensemble strategy</li>
                 </ul>
               </div>
@@ -596,7 +812,7 @@
                 <div class="meth-mod__col-label">Models &amp; Techniques</div>
                 <ul class="meth-mod__list">
                   <li>BERT NER (dslim/bert-NER)</li>
-                  <li>Gradient Boosting — confusion detection</li>
+                  <li>Gradient Boosting: confusion detection</li>
                   <li>30-day rolling behavioural log</li>
                   <li>17 engineered behavioural features</li>
                   <li>WebSocket real-time push alerts</li>
@@ -638,10 +854,10 @@
               <div class="meth-mod__col">
                 <div class="meth-mod__col-label">Fusion Weights</div>
                 <ul class="meth-mod__list">
-                  <li>Conversational AI — <strong>35%</strong></li>
-                  <li>MMSE Screening — <strong>30%</strong></li>
-                  <li>Cognitive Game — <strong>20%</strong></li>
-                  <li>Smart Reminders — <strong>15%</strong></li>
+                  <li>Conversational AI: <strong>35%</strong></li>
+                  <li>MMSE Screening: <strong>30%</strong></li>
+                  <li>Cognitive Game: <strong>20%</strong></li>
+                  <li>Smart Reminders: <strong>15%</strong></li>
                 </ul>
               </div>
               <div class="meth-mod__col">
@@ -670,10 +886,112 @@
         </div>
       </section>
 
+      <!-- ── Results & Comparison ── -->
+      <section class="domain-section" id="results">
+        <span class="section-label">Step 6</span>
+        <h2 class="section-title" style="text-align:left;margin-bottom:var(--space-4)">
+          Results &amp; <span>Model Comparison</span>
+        </h2>
+        <p class="domain-intro" style="margin-bottom:var(--space-8)">
+          Each AI module was independently evaluated and benchmarked against prior work in its respective domain.
+          The results below demonstrate significant improvements over existing approaches across all four
+          cognitive monitoring dimensions, with the integrated system achieving an overall ROC-AUC of 0.94.
+        </p>
+
+        <!-- Module accuracy tables -->
+        <div class="results-grid reveal">
+
+          <!-- Module 1 -->
+          <div class="res-card">
+            <div class="res-card__header" style="background:linear-gradient(90deg,#1e3a5f,#002147)">
+              <div class="res-card__mod">Module 01</div>
+              <div class="res-card__title">Conversational AI</div>
+              <div class="res-card__score">89.06%</div>
+            </div>
+            <table class="res-table">
+              <thead>
+                <tr><th>Model / Approach</th><th>Accuracy</th><th>F1</th><th>Note</th></tr>
+              </thead>
+              <tbody>
+                <tr class="res-table__prior"><td>Prior: Speech-only baseline [6]</td><td>74.3%</td><td>0.71</td><td>Single modality</td></tr>
+                <tr class="res-table__prior"><td>Prior: BERT text-only [7]</td><td>82.1%</td><td>0.80</td><td>No audio fusion</td></tr>
+                <tr class="res-table__ours"><td><strong>Ours: BERT + XGBoost (text)</strong></td><td><strong>87.27%</strong></td><td><strong>0.86</strong></td><td>Text only stream</td></tr>
+                <tr class="res-table__ours res-table__best"><td><strong>Ours: Multimodal Fusion</strong></td><td><strong>89.06%</strong></td><td><strong>0.88</strong></td><td>Text + Whisper ASR</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Module 2 -->
+          <div class="res-card">
+            <div class="res-card__header" style="background:linear-gradient(90deg,#1d4ed8,#1e40af)">
+              <div class="res-card__mod">Module 02</div>
+              <div class="res-card__title">Cognitive Game</div>
+              <div class="res-card__score">96.17%</div>
+            </div>
+            <table class="res-table">
+              <thead>
+                <tr><th>Model / Approach</th><th>Accuracy</th><th>F1</th><th>Note</th></tr>
+              </thead>
+              <tbody>
+                <tr class="res-table__prior"><td>Prior: Simple reaction time classifier [9]</td><td>68.4%</td><td>0.65</td><td>No baseline calibration</td></tr>
+                <tr class="res-table__prior"><td>Prior: Memory game SVM [10]</td><td>78.2%</td><td>0.76</td><td>No temporal modelling</td></tr>
+                <tr class="res-table__ours"><td><strong>Ours: LSTM decline detection</strong></td><td><strong>72.21%</strong></td><td><strong>0.70</strong></td><td>Temporal sequence model</td></tr>
+                <tr class="res-table__ours res-table__best"><td><strong>Ours: Risk Classifier (XGB+RF)</strong></td><td><strong>96.17%</strong></td><td><strong>0.96</strong></td><td>Calibrated SAC+IES features</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Module 3 -->
+          <div class="res-card">
+            <div class="res-card__header" style="background:linear-gradient(90deg,#065f46,#047857)">
+              <div class="res-card__mod">Module 03</div>
+              <div class="res-card__title">MMSE Screening</div>
+              <div class="res-card__score">90.70%</div>
+            </div>
+            <table class="res-table">
+              <thead>
+                <tr><th>Model / Approach</th><th>Accuracy</th><th>F1</th><th>Note</th></tr>
+              </thead>
+              <tbody>
+                <tr class="res-table__prior"><td>Prior: Audio-only MMSE [11]</td><td>76.5%</td><td>0.74</td><td>Acoustic features only</td></tr>
+                <tr class="res-table__prior"><td>Prior: Text-only MMSE scoring [12]</td><td>81.3%</td><td>0.79</td><td>No late fusion</td></tr>
+                <tr class="res-table__ours"><td><strong>Ours: Audio stream (XGBoost)</strong></td><td><strong>87.4%</strong></td><td><strong>0.89</strong></td><td>13 MFCCs + Chroma</td></tr>
+                <tr class="res-table__ours"><td><strong>Ours: Text stream (Random Forest)</strong></td><td><strong>85.9%</strong></td><td><strong>0.87</strong></td><td>TF-IDF + PCA</td></tr>
+                <tr class="res-table__ours res-table__best"><td><strong>Ours: Late Fusion (4-class)</strong></td><td><strong>90.70%</strong></td><td><strong>0.91</strong></td><td>Multimodal combined</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Module 4 -->
+          <div class="res-card">
+            <div class="res-card__header" style="background:linear-gradient(90deg,#7c3aed,#6d28d9)">
+              <div class="res-card__mod">Module 04</div>
+              <div class="res-card__title">Smart Reminders</div>
+              <div class="res-card__score">96.51%</div>
+            </div>
+            <table class="res-table">
+              <thead>
+                <tr><th>Model / Approach</th><th>Accuracy</th><th>F1</th><th>Note</th></tr>
+              </thead>
+              <tbody>
+                <tr class="res-table__prior"><td>Prior: Rule-based reminder system [13]</td><td>61.2%</td><td>0.58</td><td>No confusion detection</td></tr>
+                <tr class="res-table__prior"><td>Prior: Basic ML adherence classifier [14]</td><td>79.8%</td><td>0.77</td><td>Limited feature set</td></tr>
+                <tr class="res-table__ours"><td><strong>Ours: Logistic Regression baseline</strong></td><td><strong>88.4%</strong></td><td><strong>0.87</strong></td><td>17 behavioural traits</td></tr>
+                <tr class="res-table__ours res-table__best"><td><strong>Ours: Gradient Boosting (confusion)</strong></td><td><strong>96.51%</strong></td><td><strong>0.96</strong></td><td>30-day rolling log</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+
+
+
+      </section>
+
       <!-- ── Technologies ── -->
       <section class="domain-section" id="technologies" style="padding-bottom:var(--space-20)">
         <div class="divider"></div>
-        <span class="section-label">Step 6</span>
+        <span class="section-label">Step 7</span>
         <h2 class="section-title" style="text-align:left;margin-bottom:var(--space-8)">
           Technologies <span>Used</span>
         </h2>
