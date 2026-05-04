@@ -142,14 +142,18 @@
         </div>
 
         <!-- 4, Final -->
-        <div class="pres-card pres-card--pending reveal reveal-delay-3">
+        <div class="pres-card reveal reveal-delay-3">
           <div class="pres-card__thumb">
-            <div class="pres-card__thumb-placeholder" style="display:flex">
+            <img src="../assets/presentations/final.png"
+                 alt="Final Presentation cover"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="pres-card__thumb-placeholder" style="display:none">
               <div class="pres-card__thumb-icon"><i class="fa-solid fa-graduation-cap" style="color:rgba(255,255,255,0.6);font-size:48px"></i></div>
               <div class="pres-card__thumb-text">Final Presentation</div>
             </div>
+            <a href="https://canva.link/qk1rsyzfr36vpsa" target="_blank" class="pres-card__thumb-overlay" aria-label="View Final Presentation"></a>
             <div class="pres-card__num">4</div>
-            <span class="pres-card__badge pres-card__badge--pending">Upcoming</span>
+            <span class="pres-card__badge pres-card__badge--available">Available</span>
           </div>
           <div class="pres-card__body">
             <div class="pres-card__type">Final Review</div>
@@ -160,9 +164,12 @@
               and live system demonstration to the examination panel.
             </p>
             <div class="pres-card__footer">
-              <span class="pres-card__date"><i class="fa-regular fa-calendar"></i>May–June 2025</span>
+              <span class="pres-card__date"><i class="fa-regular fa-calendar"></i>May 2025</span>
               <div class="pres-card__actions">
-                <span class="btn btn--ghost btn--sm" style="cursor:not-allowed;opacity:.55">Upcoming</span>
+                <a href="https://canva.link/qk1rsyzfr36vpsa"
+                   class="btn btn--primary btn--sm" target="_blank">View</a>
+                <a href="https://canva.link/qk1rsyzfr36vpsa"
+                   class="btn btn--ghost btn--sm" target="_blank">Download</a>
               </div>
             </div>
           </div>
